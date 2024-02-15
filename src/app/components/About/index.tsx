@@ -1,36 +1,31 @@
-import Link from "next/link";
+/* eslint-disable react/no-unescaped-entities */
 
 export default function About() {
   return (
-    <div
-      className="flex flex-col max-w-screen-lg gap-8 p-4 animate-slide-in-left"
-      id="about"
-    >
+    <div className="flex flex-col max-w-screen-lg gap-16 p-4 animate-slide-in-left">
       <h1 className="text-slate-600 text-2xl">
-        Meet Caio Bukvar, software developer
+        Meet <span className="text-lime-600 font-bold">Caio Bukvar</span>,
+        software developer.
       </h1>
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-xl">About me:</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsam,
-          numquam dicta veritatis enim commodi incidunt asperiores repellendus,
-          beatae velit ducimus nulla ullam temporibus! Hic totam temporibus,
-          optio vero voluptate debitis dolorem quae nesciunt et non quibusdam,
-          iste accusamus facere necessitatibus voluptas delectus quidem officiis
-          ad perferendis? Sapiente, illo corporis asperiores doloremque
-          molestiae facilis. Cum voluptatibus hic sapiente temporibus quae
-          accusamus, facere tempore saepe debitis placeat est deserunt. Quam
-          reiciendis culpa reprehenderit voluptatum, facere iste sit omnis a
-          placeat, atque itaque corporis sequi. Ad perferendis quasi quas
-          voluptate, saepe voluptates doloribus voluptatum dolore ratione
-          praesentium eos unde odio quos officiis!
-        </p>
+        <h3 className="text-xl font-bold">About me:</h3>
+        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
+          <p>
+            Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
+          </p>
+          <p>
+            Started my career on 2021, fell in love with programming when I
+            started a fullstack development course, focusing on javascript,
+            React and Node.JS. That was my first glampse on the tech area,
+            besides gaming, making me hungry for knowledge.
+          </p>
+          <p>
+            Since then, I'm commited to improve my skills as a developer and
+            always aim to deliver the best possible solution.
+          </p>
+        </div>
       </div>
-
-      <button className="bg-slate-700 hover:bg-slate-600 hover:outline hover:outline-2 hover:outline-lime-600 text-lime-600 text-md text-center rounded-md p-2 w-[120px]">
-        <Link href="/projects">Learn more</Link>
-      </button>
     </div>
   );
 }

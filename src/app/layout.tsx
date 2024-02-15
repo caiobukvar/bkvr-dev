@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
+import { inter, unbounded, jura } from "@/fonts";
 import Navbar from "./components/Navbar";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BKVR Development",
@@ -19,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-gray-900 text-slate-400 min-h-screen">
       <Toaster />
-      <body className={inter.className}>
+      <body className={unbounded.className}>
         <Navbar />
         {children}
       </body>
