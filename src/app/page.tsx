@@ -12,7 +12,7 @@ export default function Home() {
         height={200}
         className="rounded-lg"
       />
-      <h1 className="text-5xl text-slate-600">BKVR.DEV</h1>
+      <h1 className="text-5xl text-lime-500">BKVR.DEV</h1>
 
       <About />
     </main>

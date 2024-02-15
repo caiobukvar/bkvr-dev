@@ -17,7 +17,7 @@ export default function Navbar(req: any) {
       <Link
         href="/projects"
         className={`hover:text-lime-400 ${
-          path === "/social" ? "text-lime-500" : ""
+          path === "/projects" ? "text-lime-500" : ""
         }`}
       >
         Projects
