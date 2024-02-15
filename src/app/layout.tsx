@@ -16,7 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gray-900 text-slate-400 min-h-screen">
-      <Toaster />
+      <Toaster
+        richColors
+        toastOptions={{
+          style: {
+            background: "#475569",
+            color: "#a3e635",
+            borderColor: "#a3e635",
+          },
+        }}
+      />
       <body className={unbounded.className}>
         <Navbar />
         {children}

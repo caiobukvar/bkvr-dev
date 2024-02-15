@@ -18,12 +18,12 @@ export default function Home() {
           height={200}
           className="rounded-lg"
         />
-        <h1 className="text-5xl text-lime-500 font-bold">{`<BKVR />`}</h1>
+        <h1 className="text-5xl text-lime-500 font-bold animate-pulse">{`<BKVR />`}</h1>
         <About />
 
         <Link
           href="#projects"
-          className="bg-slate-700 hover:bg-slate-600 hover:outline hover:outline-2 hover:outline-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 animate-slide-in-left"
+          className="bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 animate-slide-in-left focus-visible:ring-2 focus-visible:ring-lime-600"
         >
           Learn more
         </Link>

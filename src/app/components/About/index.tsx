@@ -3,13 +3,13 @@
 export default function About() {
   return (
     <div className="flex flex-col max-w-screen-lg gap-16 p-4 animate-slide-in-left">
-      <h1 className="text-slate-600 text-2xl">
+      <h1 className="text-slate-600 text-3xl">
         Meet <span className="text-lime-600 font-bold">Caio Bukvar</span>,
         software developer.
       </h1>
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-xl font-bold">About me:</h3>
+        <h3 className="text-2xl font-bold">About me:</h3>
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
           <p>
             Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
