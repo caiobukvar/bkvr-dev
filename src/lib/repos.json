@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "bkvr-dev",
+    "description": "My portfolio",
+    "url": "www.bkvr.dev",
+    "githubURL": "https://github.com/caiobukvar/bkvr-dev",
+    "thumbnail": "",
+    "tags": ["NextJS", "Typescript", "TailwindCSS", "Radix-UI"]
+  },
+  {
+    "id": 2,
+    "name": "nlw-expert14-react",
+    "description": "Notes that get audio automatically transcripted or can also be typed.",
+    "url": "",
+    "githubURL": "https://github.com/caiobukvar/nlw-expert14-react",
+    "thumbnail": "",
+    "tags": ["React", "Typescript", "TailwindCSS", "Radix-UI"]
+  },
+  {
+    "id": 3,
+    "name": "br-adv",
+    "description": "Mock from Bianca Rocha's website",
+    "url": "",
+    "githubURL": "https://github.com/caiobukvar/br-adv",
+    "thumbnail": "/thumbnails/thumb-bradv.png",
+    "tags": ["NextJS", "SCSS", "ChakraUI", "Docker", "PostgreSQL"]
+  },
+  {
+    "id": 4,
+    "name": "wookie-pizza",
+    "description": "The project consists in a pizzeria menu, where you can customize your pizza, also counting with 'pizza of the day' promotion, with point system.",
+    "url": "",
+    "githubURL": "https://github.com/caiobukvar/wookie-pizza",
+    "thumbnail": "",
+    "tags": [
+      "NextJS",
+      "Typescript",
+      "Redux",
+      "ChakraUI",
+      "Prisma",
+      "PostgreSQL"
+    ]
+  }
+]

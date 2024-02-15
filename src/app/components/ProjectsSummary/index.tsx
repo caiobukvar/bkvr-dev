@@ -1,32 +1,21 @@
 "use client";
 import { useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard";
+import repos from "@/lib/repos.json";
+interface Projects {
+  id: number;
+  name: string;
+  description: string;
+  url: string;
+  githubURL: string;
+  thumbnail: string;
+  tags: string[];
+}
 
 export default function ProjectsSummary() {
-  const [projects, setProjects] = useState([]);
-  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [projects, setProjects] = useState<Projects[]>(repos);
+  const [filteredProjects, setFilteredProjects] = useState<Projects[]>(repos);
   const [filter, setFilter] = useState("");
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch(
-          `https://api.github.com/users/caiobukvar/repos`
-        );
-        if (response.ok) {
-          const data = await response.json();
-          setProjects(data);
-          setFilteredProjects(data);
-        } else {
-          console.error("Failed to fetch projects:", response.statusText);
-        }
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      }
-    };
-
-    fetchProjects();
-  }, []);
 
   useEffect(() => {
     const filtered = projects.filter((project) =>
@@ -36,7 +25,7 @@ export default function ProjectsSummary() {
   }, [projects, filter]);
 
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left">
+    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 mt-12">
       <div className="flex flex-col gap-4">
         <h3 className="text-2xl font-bold">My projects:</h3>
         <div>
@@ -48,9 +37,9 @@ export default function ProjectsSummary() {
             className=" bg-transparent rounded-md py-2 text-xl font-semibold tracking-tight text-lime-600 placeholder:text-slate-500 outline-none"
           />
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[250px] gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[350px] gap-6">
           {filteredProjects.map((project) => {
-            return <ProjectCard project={project} key={project} />;
+            return <ProjectCard project={project} key={project.id} />;
           })}
         </div>
       </div>

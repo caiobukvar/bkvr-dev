@@ -7,10 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section
-        className="flex flex-col min-h-screen items-center p-6 gap-6"
-        id="about"
-      >
+      <section className="flex flex-col min-h-screen items-center p-6 gap-6">
         <Image
           src={Avatar}
           alt="avatar"
