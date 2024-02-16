@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
 import { inter, unbounded, jura } from "@/fonts";
 import Navbar from "./components/Navbar";
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={unbounded.className}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
