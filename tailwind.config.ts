@@ -13,6 +13,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "bounce-short": "bounce 1s ease-in-out 4",
+        "slide-in-left":
+          "slideInLeft .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+      },
+      keyframes: {
+        slideInLeft: {
+          "0%": {
+            transform: "translateX(-1000px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+      },
     },
   },
   plugins: [],
