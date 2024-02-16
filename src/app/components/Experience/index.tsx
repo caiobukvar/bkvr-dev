@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function Experience() {
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-4 p-4">
+    <div className="flex flex-col w-full max-w-screen-lg gap-4 p-4 mt-12">
       <h3 className="text-2xl font-bold">Professional experience:</h3>
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">

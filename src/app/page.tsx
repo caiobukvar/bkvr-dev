@@ -21,10 +21,10 @@ export default function Home() {
         <About />
 
         <Link
-          href="#projects"
+          href="#experience"
           className="bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 animate-slide-in-left focus-visible:ring-2 focus-visible:ring-lime-600"
         >
-          My projects
+          Work experience
         </Link>
       </section>
 
@@ -33,6 +33,13 @@ export default function Home() {
         id="experience"
       >
         <Experience />
+
+        <Link
+          href="#projects"
+          className="bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 animate-slide-in-left focus-visible:ring-2 focus-visible:ring-lime-600"
+        >
+          Personal projects
+        </Link>
       </section>
 
       <section

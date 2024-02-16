@@ -17,6 +17,14 @@ export default function Navbar(req: any) {
         Home
       </Link>
       <Link
+        href="#experience"
+        className={`hover:text-lime-400 outline-none rounded-sm p-2 focus:text-lime-800 ${
+          path === "/experience" ? "text-lime-500" : ""
+        }`}
+      >
+        Experience
+      </Link>
+      <Link
         href="#projects"
         className={`hover:text-lime-400 outline-none rounded-sm p-2 focus:text-lime-800 ${
           path === "/projects" ? "text-lime-500" : ""
