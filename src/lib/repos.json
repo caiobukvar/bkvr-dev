@@ -1,16 +1,23 @@
 [
   {
     "id": 1,
-    "name": "bkvr-dev",
+    "name": "Portfolio",
     "description": "My portfolio",
     "url": "www.bkvr.dev",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
     "thumbnail": "/images/thumb-bkvr.png",
-    "tags": ["NextJS", "Typescript", "TailwindCSS", "Radix-UI", "Sonner"]
+    "tags": [
+      "NextJS",
+      "Typescript",
+      "TailwindCSS",
+      "Radix-UI",
+      "Sonner",
+      "Nodemailer"
+    ]
   },
   {
     "id": 2,
-    "name": "nlw-expert14-react",
+    "name": "Notes with audio transcription",
     "description": "Notes that get audio automatically transcripted or can also be typed.",
     "url": "",
     "githubURL": "https://github.com/caiobukvar/nlw-expert14-react",
@@ -19,16 +26,16 @@
   },
   {
     "id": 3,
-    "name": "br-adv",
+    "name": "Bianca Rocha's lawyer website",
     "description": "Mock from Bianca Rocha's website",
     "url": "",
     "githubURL": "https://github.com/caiobukvar/br-adv",
     "thumbnail": "/images/thumb-bradv.png",
-    "tags": ["NextJS", "SCSS", "ChakraUI", "Docker", "PostgreSQL"]
+    "tags": ["NextJS", "SCSS", "ChakraUI", "Docker", "PostgreSQL", "Nodemailer"]
   },
   {
     "id": 4,
-    "name": "wookie-pizza",
+    "name": "Wookie pizza",
     "description": "The project consists in a pizzeria menu, where you can customize your pizza, also counting with 'pizza of the day' promotion, with point system.",
     "url": "",
     "githubURL": "https://github.com/caiobukvar/wookie-pizza",

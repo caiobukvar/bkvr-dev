@@ -3,6 +3,7 @@ import About from "./components/About";
 import ProjectsSummary from "./components/ProjectsSummary";
 import Avatar from "/public/AvatarMaker.svg";
 import Link from "next/link";
+import Socials from "./components/Socials";
 
 export default function Home() {
   return (
@@ -31,6 +32,13 @@ export default function Home() {
         id="projects"
       >
         <ProjectsSummary />
+      </section>
+
+      <section
+        className="flex flex-col min-h-screen items-center p-6 gap-6"
+        id="social"
+      >
+        <Socials />
       </section>
     </main>
   );
