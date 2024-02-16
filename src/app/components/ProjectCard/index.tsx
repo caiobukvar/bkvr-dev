@@ -17,7 +17,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <button className="flex flex-col justify-between bg-slate-800 p-5 gap-3 w-full rounded-md overflow-hidden relative outline-none hover:ring-2 hover:ring-lime-600 text-left focus-visible:ring-2 focus-visible:ring-lime-600">
       <p className="text-lg text-lime-600">{project.name}</p>
 
-      <Image src={project.thumbnail} width={250} height={250} alt="thumb" />
+      <Image
+        src={project.thumbnail}
+        width={300}
+        height={250}
+        alt="thumb"
+        className="rounded-sm"
+      />
 
       <div className="flex flex-wrap gap-3">
         {project.tags.map((tag) => {
@@ -31,6 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           );
         })}
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600 to-black/0 pointer-events-none opacity-10" />
     </button>
   );
 }
