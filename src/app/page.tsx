@@ -4,6 +4,7 @@ import ProjectsSummary from "./components/ProjectsSummary";
 import Avatar from "/public/AvatarMaker.svg";
 import Link from "next/link";
 import Socials from "./components/Socials";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -23,8 +24,15 @@ export default function Home() {
           href="#projects"
           className="bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 animate-slide-in-left focus-visible:ring-2 focus-visible:ring-lime-600"
         >
-          Learn more
+          My projects
         </Link>
+      </section>
+
+      <section
+        className="flex flex-col min-h-screen items-center p-6 gap-6"
+        id="experience"
+      >
+        <Experience />
       </section>
 
       <section
