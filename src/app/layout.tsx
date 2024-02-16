@@ -31,7 +31,6 @@ export default function RootLayout({
       <body className={unbounded.className}>
         <Navbar />
         {children}
-        <Analytics />
         <SpeedInsights />
       </body>
     </html>
