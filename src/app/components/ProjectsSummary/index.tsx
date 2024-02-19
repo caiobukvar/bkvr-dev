@@ -1,7 +1,8 @@
 "use client";
+import repos from "@/lib/repos.json";
+import { Blocks } from "lucide-react";
 import { useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard";
-import repos from "@/lib/repos.json";
 interface Projects {
   id: number;
   name: string;
@@ -28,7 +29,10 @@ export default function ProjectsSummary() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 mt-12">
       <div className="flex flex-col gap-4">
-        <h3 className="text-2xl font-bold">My projects:</h3>
+        <div className="flex gap-2 items-center">
+          <Blocks />
+          <h3 className="text-2xl font-bold">My projects:</h3>
+        </div>
         <div>
           <input
             type="text"

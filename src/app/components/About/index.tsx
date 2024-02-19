@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Image from "next/image";
+import { Contact } from "lucide-react";
 
 export default function About() {
   return (
@@ -11,7 +11,10 @@ export default function About() {
       </h1>
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-2xl font-bold">About me:</h3>
+        <div className="flex gap-2 items-center">
+          <Contact />
+          <h3 className="text-2xl font-bold">About me:</h3>
+        </div>
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
           <p>
             Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
