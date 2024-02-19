@@ -1,4 +1,7 @@
+import * as Dialog from "@radix-ui/react-dialog";
 import Image from "next/image";
+import { Link, X } from "lucide-react";
+import Github from "/public/images/github-logo.svg";
 
 interface ProjectCardProps {
   project: {
@@ -9,35 +12,106 @@ interface ProjectCardProps {
     githubURL: string;
     thumbnail: string;
     tags: string[];
+    status: string;
   };
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <button className="flex flex-col justify-between bg-slate-800 p-5 gap-3 w-full rounded-md overflow-hidden relative outline-none hover:ring-2 hover:ring-lime-600 text-left focus-visible:ring-2 focus-visible:ring-lime-600">
-      <p className="text-lg text-lime-600">{project.name}</p>
+    <Dialog.Root>
+      <Dialog.Trigger className="flex flex-col justify-between bg-slate-800 p-5 gap-3 w-full rounded-md overflow-hidden relative outline-none hover:ring-2 hover:ring-lime-600 text-left focus-visible:ring-2 focus-visible:ring-lime-600">
+        <div
+          className={`absolute right-2 top-2 rounded-md p-1 text-xs text-slate-200 ${
+            project.status === "In progress" ? "bg-orange-600" : "bg-green-600"
+          }`}
+        >
+          {project.status}
+        </div>
+        <p className="text-xl text-lime-600">{project.name}</p>
 
-      <Image
-        src={project.thumbnail}
-        width={300}
-        height={250}
-        alt="thumb"
-        className="rounded-sm"
-      />
+        <Image
+          src={project.thumbnail}
+          width={300}
+          height={250}
+          alt="thumb"
+          className="rounded-sm"
+        />
 
-      <div className="flex flex-wrap gap-3">
-        {project.tags.map((tag) => {
-          return (
-            <div
-              key={tag}
-              className="rounded-md p-2 bg-slate-400 text-slate-800 text-xs"
-            >
-              {tag}
+        <div className="flex flex-wrap gap-3">
+          {project.tags.map((tag) => {
+            return (
+              <div
+                key={tag}
+                className="rounded-md p-1 bg-slate-400 text-slate-800 text-xs"
+              >
+                {tag}
+              </div>
+            );
+          })}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600 to-black/0 pointer-events-none opacity-10" />
+      </Dialog.Trigger>
+
+      <Dialog.Portal>
+        <Dialog.Overlay className="inset-0 fixed bg-black/60" />
+        <Dialog.Content className="fixed inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[640px] max-h-[70vh] h-full w-[90vw] md:w-full overflow-auto bg-slate-700 rounded-md flex flex-col outline-none">
+          <Dialog.Close className="absolute top-0 right-0 p-1.5 text-slate-400 hover:text-slate-100">
+            <X className="size-5" />
+          </Dialog.Close>
+
+          <div className="flex flex-col w-full min-h-full h-full p-5 gap-5">
+            <div className="flex gap-10 items-center">
+              <p className="text-2xl">{project.name}</p>
+              <p
+                className={`border-l-[2px] border-l-lime-600 p-2 text-sm text-slate-200 rounded-r-md ${
+                  project.status === "In progress"
+                    ? "bg-orange-500"
+                    : "bg-green-500"
+                }`}
+              >
+                {project.status}
+              </p>
             </div>
-          );
-        })}
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600 to-black/0 pointer-events-none opacity-10" />
-    </button>
+
+            <p className="text-lime-600">Project links:</p>
+            <div className="flex gap-3">
+              <a href={project.githubURL} target="_blank">
+                <Image src={Github} alt="github" width={24} height={24} />
+              </a>
+
+              {project.url && (
+                <a href={project.url} target="_blank">
+                  <Link width={24} height={24} />
+                </a>
+              )}
+            </div>
+
+            <p className="text-md">{project.description}</p>
+
+            <Image
+              src={project.thumbnail}
+              width={500}
+              height={300}
+              alt="thumb"
+              className="rounded-md self-center"
+            />
+
+            <div className="flex flex-col w-full gap-2">
+              <p className="text-md">Technologies used:</p>
+              <div className="flex flex-wrap gap-2 pb-5">
+                {project.tags.map((tag) => (
+                  <div
+                    key={tag}
+                    className="rounded-md p-1 bg-slate-400 text-slate-800 text-xs"
+                  >
+                    <p>{tag}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 }

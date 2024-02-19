@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
+import { unbounded } from "@/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
 import { Toaster } from "sonner";
-import { inter, unbounded, jura } from "@/fonts";
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
 
 export const metadata: Metadata = {
   title: "BKVR Development",
@@ -31,13 +29,10 @@ export default function RootLayout({
         }}
       />
       <body className={unbounded.className}>
-        <Theme>
-          <Navbar />
-          {children}
-          <SpeedInsights />
-
-          <Analytics />
-        </Theme>
+        <Navbar />
+        {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

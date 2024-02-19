@@ -7,7 +7,7 @@ export default function Navbar(req: any) {
   const path = usePathname();
 
   return (
-    <div className="flex w-full align-center justify-center md:justify-start lg:justify-start p-5 gap-5 bg-slate-800 sticky top-0 z-10">
+    <div className="flex w-full align-center justify-center md:justify-start lg:justify-start p-5 gap-2 text-sm md:gap-5 md:text-md bg-slate-800 sticky top-0 z-10">
       <Link
         href="/"
         className={`hover:text-lime-400 outline-none rounded-sm p-2 focus:text-lime-800 ${
