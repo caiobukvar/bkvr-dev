@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Developer portfolio",
+    "name": "Developer Portfolio",
     "description": "This is my personal developer portfolio, a work in progress where I can show some of my skills.",
     "url": "https://www.bkvr.dev.br",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
@@ -53,7 +53,7 @@
   },
   {
     "id": 4,
-    "name": "Wookie pizza",
+    "name": "Wookie Pizza",
     "description": "The project consists in a pizzeria menu, where you can customize your pizza, also counting with 'pizza of the day' promotion, with point system.",
     "url": "https://wookie-pizza.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/wookie-pizza",
