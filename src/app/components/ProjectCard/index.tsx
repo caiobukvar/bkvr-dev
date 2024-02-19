@@ -77,14 +77,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </p>
             </div>
 
-            <p className="text-slate-600 font-bold text-lg">Project links:</p>
             <div className="flex gap-3">
-              <a href={project.githubURL} target="_blank">
+              <a
+                href={project.githubURL}
+                target="_blank"
+                className="hover:border-b-[1px] hover:border-b-lime-600"
+              >
                 <Image src={Github} alt="github" width={24} height={24} />
               </a>
 
               {project.url && (
-                <a href={project.url} target="_blank">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="border-b-[1px] border-b-transparent hover:border-b-[1px] hover:border-b-lime-600"
+                >
                   <Link width={24} height={24} />
                 </a>
               )}

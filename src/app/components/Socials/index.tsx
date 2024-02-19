@@ -16,7 +16,7 @@ export default function Socials() {
           target="_blank"
         >
           {" "}
-          <Image src={Github} height={36} width={36} alt="github" />
+          <Image src={Github} height={24} width={24} alt="github" />
           Github
         </Link>
 
@@ -25,7 +25,7 @@ export default function Socials() {
           className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600"
           target="_blank"
         >
-          <Image src={Linkedin} height={36} width={36} alt="linkedin" />
+          <Image src={Linkedin} height={24} width={24} alt="linkedin" />
           Linkedin
         </Link>
       </div>
