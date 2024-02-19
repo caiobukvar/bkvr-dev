@@ -1,3 +1,5 @@
+import { ChevronRight } from "lucide-react";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Experience() {
   return (
@@ -17,11 +19,22 @@ export default function Experience() {
             insights, which lead us to:
           </p>
           <ul>
-            <li>● Revenue increased 40%; </li>
-            <li>● Total user amount increased by 60%;</li>
-            <li>● Number of active users increased by 50%;</li>
-            <li>● B2B clients raised from 0 to 8 (last trimester 2022);</li>
-            <li>● NPS kept above 85 throughout 2022.</li>
+            <li className="flex">
+              <ChevronRight /> Revenue increased 40%;{" "}
+            </li>
+            <li className="flex">
+              <ChevronRight /> Total user amount increased by 60%;
+            </li>
+            <li className="flex">
+              <ChevronRight /> Number of active users increased by 50%;
+            </li>
+            <li className="flex">
+              <ChevronRight /> B2B clients raised from 0 to 8 (last trimester
+              2022);
+            </li>
+            <li className="flex">
+              <ChevronRight /> NPS kept above 85 throughout 2022.
+            </li>
           </ul>
         </div>
 
@@ -37,14 +50,13 @@ export default function Experience() {
             focused on React.
           </p>
           <ul>
-            <li>
-              ● as a resident developer, I was able to majorly increase my
-              coding skills along with a senior dev following close all of my
-              code (reviewing){" "}
+            <li className="flex">
+              <ChevronRight /> major increase of my coding skills along with a
+              senior dev reviewing my code;
             </li>
-            <li>
-              ● major increase on communication skills and introduction to
-              dailies, weeklys, reports, 1 on 1's;
+            <li className="flex">
+              <ChevronRight /> major increase on communication skills and
+              introduction to dailies, weeklys, reports, 1 on 1's;
             </li>
           </ul>
         </div>
