@@ -10,6 +10,7 @@ interface Projects {
   githubURL: string;
   thumbnail: string;
   tags: string[];
+  status: string;
 }
 
 export default function ProjectsSummary() {
@@ -37,7 +38,7 @@ export default function ProjectsSummary() {
             className=" bg-transparent rounded-md py-2 text-xl font-semibold tracking-tight text-lime-600 placeholder:text-slate-500 outline-none"
           />
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[400px] gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[450px] gap-6">
           {filteredProjects.map((project) => {
             return <ProjectCard project={project} key={project.id} />;
           })}

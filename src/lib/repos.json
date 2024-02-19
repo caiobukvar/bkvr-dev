@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Portfolio",
-    "description": "My portfolio",
-    "url": "www.bkvr.dev",
+    "name": "Developer portfolio",
+    "description": "This is my personal developer portfolio, a work in progress where I can show some of my skills.",
+    "url": "https://www.bkvr.dev.br",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
     "thumbnail": "/images/thumb-bkvr.png",
     "tags": [
@@ -13,31 +13,49 @@
       "Radix-UI",
       "Sonner",
       "Nodemailer"
-    ]
+    ],
+    "status": "In progress"
   },
   {
     "id": 2,
-    "name": "Notes with audio transcription",
-    "description": "Notes that get audio automatically transcripted or can also be typed.",
-    "url": "",
+    "name": "ATT Notes",
+    "description": "Audio-to-text notes is note creation tool that automatically transcripts audio into text.",
+    "url": "https://nlw-expert14-react.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/nlw-expert14-react",
     "thumbnail": "/images/thumb-nlw.png",
-    "tags": ["React", "Typescript", "TailwindCSS", "Radix-UI", "Sonner"]
+    "tags": [
+      "React",
+      "Typescript",
+      "TailwindCSS",
+      "Radix-UI",
+      "Sonner",
+      "Vite",
+      "SpeechRecognitionAPI"
+    ],
+    "status": "Complete"
   },
   {
     "id": 3,
-    "name": "Bianca Rocha's lawyer website",
-    "description": "Mock from Bianca Rocha's website",
-    "url": "",
+    "name": "BR Advocacia",
+    "description": "Layout created to simulate a lawyer's website.",
+    "url": "https://br-adv.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/br-adv",
     "thumbnail": "/images/thumb-bradv.png",
-    "tags": ["NextJS", "SCSS", "ChakraUI", "Docker", "PostgreSQL", "Nodemailer"]
+    "tags": [
+      "NextJS",
+      "SCSS",
+      "ChakraUI",
+      "Docker",
+      "PostgreSQL",
+      "Nodemailer"
+    ],
+    "status": "Complete"
   },
   {
     "id": 4,
     "name": "Wookie pizza",
     "description": "The project consists in a pizzeria menu, where you can customize your pizza, also counting with 'pizza of the day' promotion, with point system.",
-    "url": "",
+    "url": "https://wookie-pizza.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/wookie-pizza",
     "thumbnail": "/images/thumb-wookie.png",
     "tags": [
@@ -47,6 +65,7 @@
       "ChakraUI",
       "Prisma",
       "PostgreSQL"
-    ]
+    ],
+    "status": "Complete"
   }
 ]
