@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Portfolio",
+    "name": "Developer portfolio",
     "description": "This is my personal developer portfolio, a work in progress where I can show some of my skills.",
     "url": "https://www.bkvr.dev.br",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
