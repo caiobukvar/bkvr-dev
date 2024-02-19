@@ -5,6 +5,8 @@ import { Toaster } from "sonner";
 import { inter, unbounded, jura } from "@/fonts";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
 export const metadata: Metadata = {
   title: "BKVR Development",
@@ -29,11 +31,13 @@ export default function RootLayout({
         }}
       />
       <body className={unbounded.className}>
-        <Navbar />
-        {children}
-        <SpeedInsights />
+        <Theme>
+          <Navbar />
+          {children}
+          <SpeedInsights />
 
-        <Analytics />
+          <Analytics />
+        </Theme>
       </body>
     </html>
   );
