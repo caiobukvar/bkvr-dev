@@ -12,7 +12,7 @@ export default function Socials() {
 
         <Link
           href="https://github.com/caiobukvar"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600"
+          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600"
           target="_blank"
         >
           {" "}
@@ -22,7 +22,7 @@ export default function Socials() {
 
         <Link
           href="https://www.linkedin.com/in/caiobukvar/"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600"
+          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600"
           target="_blank"
         >
           <Image src={Linkedin} height={36} width={36} alt="linkedin" />
