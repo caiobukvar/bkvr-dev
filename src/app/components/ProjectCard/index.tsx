@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           width={300}
           height={250}
           alt="thumb"
-          className="rounded-sm"
+          className="rounded-sm self-center"
         />
 
         <div className="flex flex-wrap gap-3">
