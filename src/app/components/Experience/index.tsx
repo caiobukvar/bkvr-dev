@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { AtSign, Building, ChevronRight } from "lucide-react";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Experience() {
@@ -8,11 +8,14 @@ export default function Experience() {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
           <div className="flex flex-col">
-            <h2 className="text-slate-600 font-bold">
-              Frontend Developer @ Unmaze
-            </h2>
+            <div className="flex gap-2">
+              <h2 className="text-slate-600 font-bold">Frontend Developer</h2>
+              <AtSign className="text-slate-600 w-5 h-5 self-center" />
+              <h2 className="text-slate-600 font-bold">Unmaze</h2>
+            </div>
             <p className="text-xs">Mar. 2022 - Aug. 2023</p>
           </div>
+
           <p>
             I was responsible for developing unmaze's platform and maintaining
             it, focused on React. I've contributed with several crucial
@@ -40,9 +43,11 @@ export default function Experience() {
 
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
           <div className="flex flex-col">
-            <h2 className="text-slate-600 font-bold">
-              Frontend Developer @ Cubos Academy
-            </h2>
+            <div className="flex gap-2">
+              <h2 className="text-slate-600 font-bold">Frontend Developer</h2>
+              <AtSign className="text-slate-600 w-5 h-5 self-center" />
+              <h2 className="text-slate-600 font-bold">Cubos Academy</h2>
+            </div>
             <p className="text-xs">Nov. 2021 - Mar. 2022</p>
           </div>
           <p>
