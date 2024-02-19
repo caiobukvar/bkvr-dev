@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left">
+    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left ">
       <h1 className="text-slate-600 text-3xl">
         Meet <span className="text-lime-600 font-bold">Caio Bukvar</span>,
         software developer.

@@ -17,7 +17,7 @@ export default function Home() {
           height={200}
           className="rounded-lg"
         />
-        <h1 className="text-5xl text-lime-500 font-bold animate-pulse">{`<BKVR />`}</h1>
+        <h1 className="text-5xl text-lime-500 font-bold animate-pulse hover:underline ">{`<BKVR />`}</h1>
         <About />
 
         <Link
