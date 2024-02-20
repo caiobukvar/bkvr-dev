@@ -39,7 +39,7 @@ export default function ProjectsSummary() {
             placeholder="Filter projects by name..."
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className=" bg-transparent rounded-md py-2 text-xl font-semibold tracking-tight text-lime-600 placeholder:text-slate-500 outline-none"
+            className=" bg-transparent rounded-md py-2 text-xl font-semibold tracking-tight text-lime-600 placeholder:text-slate-600 outline-none"
           />
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[450px] gap-6">
