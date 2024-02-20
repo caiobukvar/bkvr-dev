@@ -13,9 +13,9 @@ export default function About() {
       <div className="flex flex-col gap-4">
         <div className="flex gap-2 items-center">
           <Contact />
-          <h3 className="text-2xl font-bold">About me:</h3>
+          <h3 className="text-xl md:text-2xl font-bold">About me:</h3>
         </div>
-        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2">
+        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2 text-sm md:text-base">
           <p>
             Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
           </p>

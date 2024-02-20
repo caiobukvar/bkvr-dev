@@ -31,7 +31,7 @@ export default function ProjectsSummary() {
       <div className="flex flex-col gap-4">
         <div className="flex gap-2 items-center">
           <Blocks />
-          <h3 className="text-2xl font-bold">My projects:</h3>
+          <h3 className="text-xl md:text-2xl font-bold">My projects:</h3>
         </div>
         <div>
           <input
