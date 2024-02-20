@@ -39,10 +39,15 @@ This is a website is being created as a portfolio to show a bit about myself. It
   ![experience](/public/images/thumb-experience.png)
 </div><br><br>
 
-> The projects area has clickable cards, where in each project you can see details about it and find links for each deploy and github repository
+> The projects area has interactive cards that opens a dialog to show more details about it
 <div align='center'>
 
   ![projects](/public/images/thumb-projects.png)
+</div><br><br>
+
+> In each project card you can see details about it and find links for each deploy and github repository
+<div align='center'>
+
   ![projects2](/public/images/thumb-projects2.png)
 </div><br><br>
 
