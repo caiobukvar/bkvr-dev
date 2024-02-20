@@ -21,14 +21,15 @@ export default function About() {
           </p>
           <p>
             Started my career on 2021, fell in love with programming when I
-            started a fullstack development course, focusing on javascript,
-            React and Node.JS. That was my first glampse on the tech area,
-            besides gaming, making me hungry for knowledge.
+            started a fullstack development course. That was my first glampse on
+            the tech area, besides gaming, making me hungry for knowledge.
           </p>
           <p>
-            Since then, I'm commited to improve my skills as a developer and
-            always aim to deliver the best possible solution.
+            Nowadays, I'm commited to improve my skills as a developer, while
+            learning a bit about design, typography and UI/UX, scratching some
+            designs here and there.
           </p>
+          <p>I'm always aiming to deliver the best possible solution.</p>
         </div>
       </div>
     </div>

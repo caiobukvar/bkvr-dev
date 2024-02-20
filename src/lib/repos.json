@@ -12,7 +12,8 @@
       "TailwindCSS",
       "Radix-UI",
       "Sonner",
-      "Nodemailer"
+      "Nodemailer",
+      "Lucide"
     ],
     "status": "In progress"
   },
@@ -30,7 +31,8 @@
       "Radix-UI",
       "Sonner",
       "Vite",
-      "SpeechRecognitionAPI"
+      "SpeechRecognitionAPI",
+      "Lucide"
     ],
     "status": "Complete"
   },
