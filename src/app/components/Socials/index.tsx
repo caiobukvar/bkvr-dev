@@ -44,9 +44,7 @@ export default function Socials() {
       },
     }));
 
-  const onSubmit = async (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setContactData((prev) => ({
       ...prev,
@@ -109,7 +107,7 @@ export default function Socials() {
         </Link>
       </div>
 
-      <form className="flex flex-col gap-6">
+      <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
         <div className="flex gap-2 items-center">
           <Mail />
           <p className="text-2xl font-bold">Send me an e-mail!</p>
@@ -160,8 +158,8 @@ export default function Socials() {
         </div>
         <div>
           <button
+            type="submit"
             className="flex gap-2 bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 focus-visible:ring-2 focus-visible:ring-lime-600"
-            onClick={(e) => onSubmit(e)}
           >
             Send <Mail />
           </button>
