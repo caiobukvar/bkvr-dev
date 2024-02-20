@@ -83,13 +83,15 @@ export default function Socials() {
       <div className="flex flex-col gap-6">
         <div className="flex gap-2 items-center">
           <Rocket />
-          <h3 className="text-2xl font-bold">Want to know more?</h3>
+          <h3 className="text-xl md:text-2xl font-bold">Want to know more?</h3>
         </div>
-        <p className="text-xl font-bold text-slate-600">Find me on</p>
+        <p className="text-md md:text-xl font-bold text-slate-600">
+          Find me on
+        </p>
 
         <Link
           href="https://github.com/caiobukvar"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600"
+          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600 text-md md:text-base"
           target="_blank"
         >
           {" "}
@@ -99,7 +101,7 @@ export default function Socials() {
 
         <Link
           href="https://www.linkedin.com/in/caiobukvar/"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600"
+          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600 text-md md:text-base"
           target="_blank"
         >
           <Image src={Linkedin} height={24} width={24} alt="linkedin" />
@@ -110,9 +112,9 @@ export default function Socials() {
       <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
         <div className="flex gap-2 items-center">
           <Mail />
-          <p className="text-2xl font-bold">Send me an e-mail!</p>
+          <p className="text-xl md:text-2xl font-bold">Send me an e-mail!</p>
         </div>
-        <div className="flex flex-col w-full sm:flex-row gap-6">
+        <div className="flex flex-col w-full sm:flex-row gap-6 ">
           <div className="flex flex-col font-bold w-full">
             <label htmlFor="name" className="text-lime-600">
               Name
