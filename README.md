@@ -27,7 +27,7 @@ This is a website is being created as a portfolio to show a bit about myself. It
   ![avatar](/public/images/thumb-navbar.png)
 </div><br><br>
 
-> The about section tells a little about me and my development carrer, also a few curiosities!
+> The about section tells a little about me, my skills and my development carrer, also a few curiosities!
 <div align='center' display='flex'>
 
   ![about](/public/images/thumb-about.png)
