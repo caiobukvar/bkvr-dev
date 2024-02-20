@@ -17,8 +17,9 @@ This is a website is being created as a portfolio to show a bit about myself. It
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ###  Other libs:
-    Sonner (for toasts)
-    Lucide-react (for icons)
+
+- **Sonner** (for toasts)
+- **Lucide** (for icons)
 
 ## Navigation
 
