@@ -68,8 +68,6 @@ export default function Socials() {
     }
   };
 
-  console.log(contactData);
-
   return (
     <div className="flex flex-col w-full max-w-screen-lg p-4 gap-16 mt-12">
       <div className="flex flex-col gap-6">
