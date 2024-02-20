@@ -44,7 +44,7 @@ export default function Socials() {
       },
     }));
 
-  const onSubmit = async (e: MouseEvent) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setContactData((prev) => ({
       ...prev,
