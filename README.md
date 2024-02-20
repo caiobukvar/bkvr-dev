@@ -2,7 +2,11 @@
 <img src="./public/AvatarMaker.svg" alt="Alt Text" width="400" height="400" />
 </p>
 
+# <p align='center'>
+
 **Meet Caio Bukvar, software developer!**
+
+</p>
 
 </div>
 
