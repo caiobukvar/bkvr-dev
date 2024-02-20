@@ -4,7 +4,7 @@
 
 # **Meet Caio Bukvar, software developer!**
 
-This is a website is being created as a portfolio to show a bit about myself. It is a project that will be under development for a time, with constant updates.<br><br>
+This is a website is being created as a portfolio to show a bit about myself. It is a project that will be under development for a time, with constant updates.
 
 ## Technologies Used
 
