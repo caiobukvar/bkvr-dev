@@ -33,13 +33,13 @@ This is a website is being created as a portfolio to show a bit about myself. It
   ![about](/public/images/thumb-about.png)
 </div><br><br>
 
-> The experience section tells a little about my professional experience, where you can find more detailed information about each job.
+> The experience section tells a little about my professional experience, where you can find more detailed information about each job
 <div align='center' display='flex'>
 
   ![experience](/public/images/thumb-experience.png)
 </div><br><br>
 
-> The projects area has clickable cards, where in each project you can see details about it and find links for each deploy and github repository.
+> The projects area has clickable cards, where in each project you can see details about it and find links for each deploy and github repository
 <div align='center'>
 
   ![projects](/public/images/thumb-projects.png)
