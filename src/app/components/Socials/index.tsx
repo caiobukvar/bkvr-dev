@@ -56,7 +56,12 @@ export default function Socials() {
 
       setContactData(initState);
 
-      toast.success("Mail sent!");
+      toast.success("Mail sent!", {
+        style: {
+          color: "#a3e635",
+          borderColor: "#a3e635",
+        },
+      });
     } catch (error) {
       const typedError = error as Error;
       setContactData((prev) => ({
@@ -64,7 +69,12 @@ export default function Socials() {
         isLoading: false,
         error: typedError.message,
       }));
-      toast.error("Failed to send e-mail.");
+      toast.error("Failed to send e-mail.", {
+        style: {
+          color: "rgb(220, 38, 38)",
+          borderColor: "rgb(220, 38, 38)",
+        },
+      });
     }
   };
 
@@ -148,7 +158,7 @@ export default function Socials() {
         </div>
         <div>
           <button
-            type="submit"
+            type="button"
             className="flex gap-2 bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 focus-visible:ring-2 focus-visible:ring-lime-600"
             onClick={(e) => onSubmit(e)}
           >
