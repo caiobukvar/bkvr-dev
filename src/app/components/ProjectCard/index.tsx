@@ -1,7 +1,8 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import Image from "next/image";
-import { Link, X } from "lucide-react";
+import { Link as LinkIcon, X } from "lucide-react";
 import Github from "/public/images/github-logo.svg";
+import Link from "next/link";
 
 interface ProjectCardProps {
   project: {
@@ -81,7 +82,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <a
                 href={project.githubURL}
                 target="_blank"
-                className="hover:border-b-[1px] hover:border-b-lime-600"
+                className="border-b-transparent border-b-[2px] hover:border-b-[2px] hover:border-b-lime-600 hover:scale-125"
               >
                 <Image src={Github} alt="github" width={24} height={24} />
               </a>
@@ -90,22 +91,28 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <a
                   href={project.url}
                   target="_blank"
-                  className="border-b-[1px] border-b-transparent hover:border-b-[1px] hover:border-b-lime-600"
+                  className="border-b-transparent border-b-[2px] hover:border-b-[2px] hover:border-b-lime-600 hover:scale-125"
                 >
-                  <Link width={24} height={24} />
+                  <LinkIcon width={24} height={24} />
                 </a>
               )}
             </div>
 
             <p className="text-md">{project.description}</p>
 
-            <Image
-              src={project.thumbnail}
-              width={500}
-              height={300}
-              alt="thumb"
-              className="rounded-md self-center"
-            />
+            <Link
+              href={project.url ? project.url : project.githubURL}
+              target="_blank"
+              className="self-center hover:ring-2 hover:ring-lime-600 rounded-md"
+            >
+              <Image
+                src={project.thumbnail}
+                width={500}
+                height={300}
+                alt="thumb"
+                className="rounded-md"
+              />
+            </Link>
 
             <div className="flex flex-col w-full gap-2">
               <p className="text-lg text-slate-600 font-bold">
