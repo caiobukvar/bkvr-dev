@@ -44,7 +44,9 @@ export default function Socials() {
       },
     }));
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     e.preventDefault();
     setContactData((prev) => ({
       ...prev,
@@ -158,7 +160,6 @@ export default function Socials() {
         </div>
         <div>
           <button
-            type="button"
             className="flex gap-2 bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 focus-visible:ring-2 focus-visible:ring-lime-600"
             onClick={(e) => onSubmit(e)}
           >
