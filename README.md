@@ -18,6 +18,7 @@ This is a website is being created as a portfolio to show a bit about myself. It
 
 ###  Other libs:
     Sonner (for toasts)
+    Lucide-react (for icons)
 
 ## Navigation
 
