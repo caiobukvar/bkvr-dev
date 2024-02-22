@@ -54,7 +54,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             );
           })}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600 to-black/0 pointer-events-none opacity-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600  pointer-events-none opacity-10" />
       </Dialog.Trigger>
 
       <Dialog.Portal>

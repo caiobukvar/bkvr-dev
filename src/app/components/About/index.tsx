@@ -1,19 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { jura } from "@/styles/fonts";
 import { Contact } from "lucide-react";
 
 export default function About() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left ">
-      <h1 className="text-slate-600 text-3xl">
-        Meet <span className="text-lime-600 font-bold">Caio Bukvar</span>,
-        software developer.
+      <h1 className={`text-slate-600 text-3xl font-bold tracking-tighter`}>
+        Meet{" "}
+        <span className={`text-lime-600 font-extrabold animate-pulse `}>
+          Caio Bukvar
+        </span>
+        , software developer.
       </h1>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         <div className="flex gap-2 items-center">
           <Contact />
-          <h3 className="text-xl md:text-2xl font-bold">About me:</h3>
+          <h3 className="text-xl md:text-2xl font-bold">About me</h3>
         </div>
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2 text-sm md:text-base">
           <p>

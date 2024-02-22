@@ -1,5 +1,5 @@
 "use client";
-import { Mail, Rocket } from "lucide-react";
+import { HandMetal, Mail, Rocket } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Github from "/public/images/github-logo.svg";
@@ -17,7 +17,6 @@ interface ContactDataState {
 }
 
 const initValues = {
-  name: "",
   email: "",
   content: "",
 };
@@ -79,7 +78,7 @@ export default function Socials() {
   };
 
   return (
-    <div className="flex flex-col w-full max-w-screen-lg p-4 gap-16 mt-12">
+    <div className="flex flex-col w-full max-w-screen-lg p-4 gap-24 mt-24">
       <div className="flex flex-col gap-6">
         <div className="flex gap-2 items-center">
           <Rocket />
@@ -109,59 +108,58 @@ export default function Socials() {
         </Link>
       </div>
 
-      <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
+      <form
+        className="flex flex-col gap-8 rounded-md  "
+        onSubmit={(e) => onSubmit(e)}
+      >
         <div className="flex gap-2 items-center">
-          <Mail />
-          <p className="text-xl md:text-2xl font-bold">Send me an e-mail!</p>
+          <HandMetal />
+          <p className="text-xl md:text-2xl font-bold tracking-tight">
+            Say hello!
+          </p>
         </div>
-        <div className="flex flex-col w-full sm:flex-row gap-6 ">
-          <div className="flex flex-col font-bold w-full">
-            <label htmlFor="name" className="text-lime-600">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Insert your name..."
-              value={values.name}
-              onChange={(e) => handleChange(e)}
-              className="bg-slate-800 rounded-md p-2 text-md font-semibold tracking-tight text-slate-400 outline-none hover:ring-2 hover:ring-lime-600 focus-visible:ring-2 focus-visible:ring-lime-600 placeholder:text-slate-600"
-            />
-          </div>
 
-          <div className="flex flex-col font-bold w-full">
-            <label htmlFor="email" className="text-lime-600">
-              E-mail
-            </label>
+        <div className="flex flex-col w-full sm:flex-row gap-6 ">
+          <div className="flex flex-col font-bold w-full ">
+            <div className="border-t-2 border-l-2 border-lime-600 w-40 h-2" />
             <input
               type="text"
               name="email"
               id="email"
               value={values.email}
-              placeholder="Insert your e-mail..."
+              placeholder="Your e-mail:"
               onChange={(e) => handleChange(e)}
-              className="bg-slate-800 rounded-md p-2 text-md font-semibold tracking-tight text-slate-400 outline-none hover:ring-2 hover:ring-lime-600 focus-visible:ring-2 focus-visible:ring-lime-600 placeholder:text-slate-600"
+              className="bg-transparent p-2 text-md font-semibold
+              text-slate-400 outline-none tracking-tight
+              placeholder:text-slate-600 focus:placeholder-lime-600
+              hover:placeholder:text-lime-600"
             />
           </div>
         </div>
-        <div className="flex flex-col font-bold w-full">
-          <label htmlFor="content" className="text-lime-600">
-            Content
-          </label>
+        <div className="flex flex-col font-bold w-full ">
+          <div
+            className="border-t-2 border-l-2 w-60 h-2 
+           border-lime-600"
+          />
           <textarea
-            placeholder="Insert e-mail content..."
+            placeholder="Insert content here"
             name="content"
             id="content"
             value={values.content}
             onChange={(e) => handleChange(e)}
-            className="bg-slate-800 rounded-md p-2 text-md font-semibold tracking-tight text-slate-400 outline-none min-h-[200px] hover:ring-2 hover:ring-lime-600 focus-visible:ring-2 focus-visible:ring-lime-600 placeholder:text-slate-600"
+            className="bg-transparent p-2 text-md font-semibold min-h-[200px]
+            text-slate-400 outline-none tracking-tight
+            placeholder:text-slate-600 focus:placeholder-lime-600
+            hover:placeholder:text-lime-600"
           />
         </div>
         <div>
           <button
             type="submit"
-            className="flex gap-2 bg-slate-700 hover:bg-slate-600 outline-none hover:ring-2 hover:ring-lime-600 hover:underline text-lime-600 text-md rounded-md p-3 focus-visible:ring-2 focus-visible:ring-lime-600"
+            className="flex gap-2 justify-center w-full md:w-auto  min-w-40  bg-slate-700 outline-none
+            text-lime-600 text-md rounded-md p-3
+            hover:bg-slate-600 hover:ring-2 hover:ring-lime-600 hover:underline
+            focus-visible:ring-2 focus-visible:ring-lime-600"
           >
             Send <Mail />
           </button>

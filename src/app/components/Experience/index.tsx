@@ -9,11 +9,11 @@ import {
 /* eslint-disable react/no-unescaped-entities */
 export default function Experience() {
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-4 p-4 mt-12">
+    <div className="flex flex-col w-full max-w-screen-lg gap-6 p-4 mt-24">
       <div className="flex gap-2 ">
         <Briefcase />
         <h3 className="text-xl md:text-2xl font-bold">
-          Professional experience:
+          Professional experience
         </h3>
       </div>
       <div className="flex flex-col gap-12">
