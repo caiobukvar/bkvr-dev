@@ -113,7 +113,6 @@ export default function Socials() {
         onSubmit={(e) => onSubmit(e)}
       >
         <div className="flex gap-2 items-center">
-          <HandMetal />
           <p className="text-xl md:text-2xl font-bold tracking-tight">
             Say hello!
           </p>
@@ -121,7 +120,11 @@ export default function Socials() {
 
         <div className="flex flex-col w-full sm:flex-row gap-6 ">
           <div className="flex flex-col font-bold w-full ">
-            <div className="border-t-2 border-l-2 border-lime-600 w-40 h-2" />
+            <div
+              className="border-t-2 border-l-2  w-40 h-2 animate-pulse 
+              border-lime-600"
+            />
+
             <input
               type="text"
               name="email"
@@ -138,9 +141,10 @@ export default function Socials() {
         </div>
         <div className="flex flex-col font-bold w-full ">
           <div
-            className="border-t-2 border-l-2 w-60 h-2 
-           border-lime-600"
+            className="border-t-2 border-l-2 w-60 h-2 animate-pulse
+            border-lime-600"
           />
+
           <textarea
             placeholder="Insert content here"
             name="content"
@@ -156,16 +160,17 @@ export default function Socials() {
         <div>
           <button
             type="submit"
-            className="flex gap-2 justify-center w-full md:w-auto  min-w-40  bg-slate-700 outline-none
-            text-lime-600 text-md rounded-md p-3
-            hover:bg-slate-600 hover:ring-2 hover:ring-lime-600 hover:underline
-            focus-visible:ring-2 focus-visible:ring-lime-600"
+            className="flex gap-2 justify-center w-full md:w-auto min-w-40 bg-slate-700 hover:bg-slate-600 outline-none
+            hover:ring-2 hover:ring-lime-600 hover:underline
+            text-lime-600 text-md rounded-md p-3 animate-slide-in-left
+            focus-visible:ring-2 focus-visible:ring-lime-600
+          shadow-lime-700 shadow-sm relative"
           >
             Send <Mail />
+            <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 pointer-events-none opacity-10" />
           </button>
         </div>
       </form>
-
       {isLoading && <Loading />}
     </div>
   );

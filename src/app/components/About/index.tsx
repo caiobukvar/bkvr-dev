@@ -6,20 +6,20 @@ import { Contact } from "lucide-react";
 export default function About() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left ">
-      <h1 className={`text-slate-600 text-3xl font-bold tracking-tighter`}>
+      <h1 className={`text-slate-600 text-3xl  tracking-tighter italic`}>
         Meet{" "}
-        <span className={`text-lime-600 font-extrabold animate-pulse `}>
+        <span className={`text-lime-600 font-bold underline `}>
           Caio Bukvar
         </span>
         , software developer.
       </h1>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 ">
         <div className="flex gap-2 items-center">
           <Contact />
           <h3 className="text-xl md:text-2xl font-bold">About me</h3>
         </div>
-        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-2 text-sm md:text-base">
+        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-6 text-sm md:text-base">
           <p>
             Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
           </p>

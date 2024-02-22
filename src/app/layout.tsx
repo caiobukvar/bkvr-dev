@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-900 text-slate-400 min-h-screen">
+    <html lang="en" className="bg-slate-900 text-slate-400 min-h-screen">
       <Toaster
         richColors
         toastOptions={{
