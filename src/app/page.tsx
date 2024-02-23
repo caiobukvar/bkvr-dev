@@ -11,35 +11,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main>
-      <Head>
-        <title>Caio Bukvar</title>
-        <meta name="description" content="Software Developer Portfolio" />
-
-        <meta property="og:url" content="https://www.bkvr.dev.br" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="<BKVR />" />
-        <meta
-          property="og:description"
-          content="Software Developer Portfolio"
-        />
-        <meta
-          property="og:image"
-          content="https://opengraph.b-cdn.net/production/documents/9ee1429b-345f-4bdc-82ed-2f0a3ff3ac31.png?token=03Sk1W-up-b-zlFQnd-agWkAFHSHhrCAXdobSRLfQhs&height=601&width=1200&expires=33244695074"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="bkvr.dev.br" />
-        <meta property="twitter:url" content="https://www.bkvr.dev.br" />
-        <meta name="twitter:title" content="<BKVR />" />
-        <meta
-          name="twitter:description"
-          content="Software Developer Portfolio"
-        />
-        <meta
-          name="twitter:image"
-          content="https://opengraph.b-cdn.net/production/documents/9ee1429b-345f-4bdc-82ed-2f0a3ff3ac31.png?token=03Sk1W-up-b-zlFQnd-agWkAFHSHhrCAXdobSRLfQhs&height=601&width=1200&expires=33244695074"
-        />
-      </Head>
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
         <div className="flex flex-col items-center gap-2 text-center">
           <Image
