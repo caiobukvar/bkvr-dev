@@ -17,7 +17,6 @@ export const metadata: Metadata = {
       index: true,
     },
   },
-  metadataBase: new URL("https://bkvr.dev.br"),
   openGraph: {
     images: "/public/images/opengraph-image.png",
   },
