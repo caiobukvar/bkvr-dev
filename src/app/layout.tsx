@@ -23,7 +23,7 @@ export default function RootLayout({
         richColors
         toastOptions={{
           style: {
-            background: "#475569",
+            background: "rgb(51 65 85)",
           },
         }}
       />
