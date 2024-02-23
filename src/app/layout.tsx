@@ -8,8 +8,14 @@ import "./globals.css";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "BKVR Development",
-  description: "Software Developer",
+  title: "<BKVR />",
+  description: "Software Developer Portfolio",
+  keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
+  robots: {
+    googleBot: {
+      index: true,
+    },
+  },
 };
 
 export default function RootLayout({
