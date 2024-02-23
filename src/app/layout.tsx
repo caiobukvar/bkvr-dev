@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Caio Bukvar - BKVR",
-    description: "Caio Bukvar's portfolio as a software developer",
+    description: "Developing solutions since 2021.",
     images: [{ url: "/app/opengraph-image.png" }],
   },
 };
