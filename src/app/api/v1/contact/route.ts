@@ -5,7 +5,6 @@ import {
 } from "../../../../config/nodemailer/nodemailer";
 
 type ContactMessageFields = {
-  name: string;
   email: string;
   content: string;
 };
@@ -39,7 +38,7 @@ const generateEmailContent: GenerateEmailContent = (data) => {
 export async function POST(req: NextRequest) {
   const data: ContactMessageFields = await req.json();
 
-  if (!data.name || !data.email || !data.content) {
+  if (!data.email || !data.content) {
     return NextResponse.json(
       { error: "Bad request" },
       {
@@ -52,7 +51,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       ...mailOptions,
       ...generateEmailContent(data),
-      subject: `Contact from portfolio - ${data.name}`,
+      subject: `Contact from portfolio - ${data.email}`,
     });
     return NextResponse.json(
       { success: "E-mail sent!" },
