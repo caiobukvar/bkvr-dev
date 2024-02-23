@@ -28,7 +28,7 @@ export default function About() {
           </p>
           <p>
             Started my career on 2021, fell in love with programming when I
-            started a fullstack development course. That was my first glampse on
+            started a fullstack development course. That was my first glance on
             the tech area, besides gaming, making me hungry for knowledge.
           </p>
           <p>
