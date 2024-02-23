@@ -10,6 +10,8 @@ import Head from "next/head";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
+  title: "Caio Bukvar - BKVR",
+  description: "Caio Bukvar's portfolio as a software developer",
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
   robots: {
     googleBot: {
