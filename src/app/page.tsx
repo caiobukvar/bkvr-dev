@@ -14,7 +14,7 @@ export async function generateMetadata({
   params: { id: string };
 }): Promise<Metadata> {
   return {
-    title: "BKVR",
+    title: "Caio Bukvar's Portfolio",
     description: "Software Developer Portfolio",
     keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
     robots: {
@@ -33,10 +33,8 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:image" content="/opengraph-image.png" />
+        <meta property="og:image:type" content="png" />
       </Head>
 
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
