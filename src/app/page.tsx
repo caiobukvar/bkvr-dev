@@ -10,64 +10,97 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
-      <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
-        <div className="flex flex-col items-center gap-2 text-center">
-          <Image
-            src={Avatar}
-            alt="avatar"
-            width={200}
-            height={200}
-            className="rounded-md shadow-sm shadow-lime-600"
-          />
+    <>
+      <Head>
+        <meta name="description" content="Software Developer Portfolio" />
+        <meta property="og:url" content="https://www.bkvr.dev.br" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="<BKVR />" />
+        <meta
+          property="og:description"
+          content="Software Developer Portfolio"
+        />
+        <meta
+          property="og:image"
+          content="https://opengraph.b-cdn.net/production/documents/ea4238a9-6a7a-4857-a787-40af9ca4f54b.png?token=AQMg4Fiez6vis005O39556OlZPohHIH3Q1U8yP-i6-E&height=481&width=498&expires=33244698999"
+        />
 
-          <div>
-            <h1 className="animate-pulse text-5xl font-bold tracking-tight text-lime-500 hover:text-lime-400 ">{`<BKVR />`}</h1>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="bkvr.dev.br" />
+        <meta property="twitter:url" content="https://www.bkvr.dev.br" />
+        <meta name="twitter:title" content="<BKVR />" />
+        <meta
+          name="twitter:description"
+          content="Software Developer Portfolio"
+        />
+        <meta
+          name="twitter:image"
+          content="https://opengraph.b-cdn.net/production/documents/ea4238a9-6a7a-4857-a787-40af9ca4f54b.png?token=AQMg4Fiez6vis005O39556OlZPohHIH3Q1U8yP-i6-E&height=481&width=498&expires=33244698999"
+        />
+      </Head>
+
+      <main>
+        <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
+          <div className="flex flex-col items-center gap-2 text-center">
+            <Image
+              src={Avatar}
+              alt="avatar"
+              width={200}
+              height={200}
+              className="rounded-md shadow-sm shadow-lime-600"
+            />
+
+            <div>
+              <h1 className="animate-pulse text-5xl font-bold tracking-tight text-lime-500 hover:text-lime-400 ">{`<BKVR />`}</h1>
+            </div>
           </div>
-        </div>
 
-        <About />
+          <About />
 
-        <Link
-          href="#experience"
-          className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
+          <Link
+            href="#experience"
+            className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
           p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
             hover:bg-slate-600 hover:text-lime-500 hover:underline hover:ring-2
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
+          >
+            Work experience
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
+          </Link>
+        </section>
+
+        <section
+          className="flex min-h-screen flex-col items-center gap-6"
+          id="experience"
         >
-          Work experience
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
-        </Link>
-      </section>
+          <Experience />
 
-      <section
-        className="flex min-h-screen flex-col items-center gap-6"
-        id="experience"
-      >
-        <Experience />
-
-        <Link
-          href="#projects"
-          className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
+          <Link
+            href="#projects"
+            className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
           p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
             hover:bg-slate-600 hover:text-lime-500 hover:underline hover:ring-2
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
+          >
+            Personal projects
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
+          </Link>
+        </section>
+
+        <section
+          className="flex min-h-screen flex-col items-center"
+          id="projects"
         >
-          Personal projects
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
-        </Link>
-      </section>
+          <ProjectsSummary />
+        </section>
 
-      <section
-        className="flex min-h-screen flex-col items-center"
-        id="projects"
-      >
-        <ProjectsSummary />
-      </section>
-
-      <section className="flex min-h-screen  flex-col items-center" id="social">
-        <Socials />
-      </section>
-    </main>
+        <section
+          className="flex min-h-screen  flex-col items-center"
+          id="social"
+        >
+          <Socials />
+        </section>
+      </main>
+    </>
   );
 }
