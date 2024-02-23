@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="flex w-full max-w-screen-lg animate-slide-in-left flex-col gap-16 p-4 ">
       <h1
-        className={`text-center text-3xl italic tracking-tighter text-slate-600 md:text-start`}
+        className={`text-center text-3xl italic tracking-tighter text-slate-600 `}
       >
         Meet{" "}
         <span
