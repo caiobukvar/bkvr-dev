@@ -51,14 +51,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/60" />
-        <Dialog.Content className="fixed inset-0 left-1/2 top-1/2 flex h-full max-h-[70vh] w-[90vw] -translate-x-1/2 -translate-y-1/2 flex-col overflow-auto rounded-md bg-slate-800 outline-none md:w-full md:max-w-[640px]">
+        <Dialog.Content
+          className="fixed inset-0 left-1/2 top-1/2 mt-12 flex h-full max-h-[70vh] w-[90vw] -translate-x-1/2
+         -translate-y-1/2 flex-col overflow-auto rounded-md bg-slate-800 outline-none md:w-full md:max-w-[640px]"
+        >
           <Dialog.Close className="absolute right-0 top-0 p-1.5 text-slate-400 hover:text-slate-100">
             <X className="size-5" />
           </Dialog.Close>
 
           <div className="flex h-full min-h-full w-full flex-col gap-5 p-5">
-            <div className="flex items-center gap-10">
-              <p className="text-2xl font-bold text-lime-600">{project.name}</p>
+            <div className="flex items-center gap-5 md:gap-10">
+              <p className="w-1/2 text-xl font-bold text-lime-600 md:w-auto md:text-2xl">
+                {project.name}
+              </p>
               <p
                 className={`rounded-r-md border-l-[2px] border-l-lime-600 p-2 text-sm text-slate-200 ${
                   project.status === "In progress"
@@ -70,22 +75,30 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-6">
               <a
                 href={project.githubURL}
                 target="_blank"
-                className="border-b-[2px] border-b-transparent hover:scale-125 hover:border-b-[2px] hover:border-b-lime-600"
+                className="flex items-center gap-2 border-b-[2px] border-b-transparent
+                hover:scale-105"
               >
                 <Image src={Github} alt="github" width={24} height={24} />
+                <span className="text-xs tracking-tighter text-slate-500">
+                  github repo
+                </span>
               </a>
 
               {project.url && (
                 <a
                   href={project.url}
                   target="_blank"
-                  className="border-b-[2px] border-b-transparent hover:scale-125 hover:border-b-[2px] hover:border-b-lime-600"
+                  className="flex items-center gap-2 border-b-[2px] border-b-transparent
+                  hover:scale-105"
                 >
                   <LinkIcon width={24} height={24} />
+                  <span className="text-xs tracking-tighter text-slate-500 ">
+                    deploy
+                  </span>
                 </a>
               )}
             </div>

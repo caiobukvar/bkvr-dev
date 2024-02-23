@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Developer Portfolio",
-    "description": "This is my personal developer portfolio, a work in progress where I can show some of my skills.",
+    "description": "This is my personal developer portfolio, a work in progress to show my skills and test new things!",
     "url": "https://www.bkvr.dev.br",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
     "thumbnail": "/images/projects/thumb-bkvr.png",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "name": "ATT Notes",
-    "description": "Audio-to-text notes is note creation tool that automatically transcripts audio into text.",
+    "description": "Audio-to-text notes is note creation tool that automatically transcripts audio into text and saves data to localstorage only.",
     "url": "https://nlw-expert14-react.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/nlw-expert14-react",
     "thumbnail": "/images/projects/thumb-nlw.png",
@@ -32,7 +32,8 @@
       "Sonner",
       "Vite",
       "SpeechRecognitionAPI",
-      "Lucide"
+      "Lucide",
+      "localstorage"
     ],
     "status": "Complete"
   },
@@ -49,14 +50,15 @@
       "ChakraUI",
       "Docker",
       "PostgreSQL",
-      "Nodemailer"
+      "Nodemailer",
+      "Google Maps API"
     ],
     "status": "Complete"
   },
   {
     "id": 4,
     "name": "Wookie Pizza",
-    "description": "The project consists in a pizzeria menu, where you can customize your pizza, also counting with 'pizza of the day' promotion, with point system.",
+    "description": "The project is a pizzeria menu, made for order customization, also counting with 'pizza of the day' promotion and a points system. It was made in a 4 day period limit to test what I could accomplish in said time.",
     "url": "https://wookie-pizza.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/wookie-pizza",
     "thumbnail": "/images/projects/thumb-wookie.png",

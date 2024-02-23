@@ -42,7 +42,7 @@ export default function ProjectsSummary() {
             className=" rounded-md bg-transparent py-2 text-xl font-semibold tracking-tight text-lime-600 outline-none placeholder:text-slate-600"
           />
         </div>
-        <div className="grid auto-rows-[300px] gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid auto-rows-[280px] gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => {
             return <ProjectCard project={project} key={project.id} />;
           })}
