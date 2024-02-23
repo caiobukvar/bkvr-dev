@@ -157,11 +157,11 @@ export default function Socials() {
             />
           </div>
         </div>
-        <div>
+        <div className="flex justify-end">
           <button
             type="submit"
-            className="relative flex gap-2 justify-center w-full md:w-auto min-w-40  outline-none shadow-sm
-            text-md rounded-md p-3 animate-slide-in-left 
+            className="relative flex gap-2 items-center justify-center w-full md:w-auto min-w-40
+            text-md rounded-md p-3 outline-none shadow-sm 
             shadow-lime-700 text-lime-600   bg-slate-700
             hover:ring-2 hover:ring-lime-500 hover:text-lime-500 hover:bg-slate-600 hover:underline
             focus-visible:ring-2 focus-visible:ring-lime-600

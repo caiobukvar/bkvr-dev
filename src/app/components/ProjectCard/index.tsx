@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import * as Dialog from "@radix-ui/react-dialog";
 import Image from "next/image";
 import { Link as LinkIcon, X } from "lucide-react";
@@ -21,14 +22,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger
-        className="flex flex-col justify-between text-left bg-slate-800 p-5 gap-3 w-full 
-          overflow-hidden relative outline-none rounded-md
+        className="relative flex w-full flex-col gap-6 overflow-hidden rounded-md 
+          bg-slate-800 p-5 text-left outline-none
           hover:ring-2 hover:ring-lime-600 
           focus-visible:ring-2 focus-visible:ring-lime-600"
       >
         <div className="flex flex-col gap-2">
           <div
-            className={`rounded-md p-[1px] text-xs text-slate-200 w-[90px] text-center ${
+            className={`w-[90px] rounded-md p-[1px] text-center text-xs text-slate-200 ${
               project.status === "In progress"
                 ? "bg-orange-600"
                 : "bg-green-600"
@@ -39,42 +40,27 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <p className="text-xl text-lime-600">{project.name}</p>
         </div>
 
-        <Image
+        <img
           src={project.thumbnail}
-          width={300}
-          height={250}
           alt="thumb"
-          className="rounded-sm self-center"
+          className="h-[150px] w-full self-center rounded-sm"
         />
 
-        <div className="flex flex-wrap gap-3">
-          {project.tags.map((tag) => {
-            return (
-              <div
-                key={tag}
-                className="rounded-md p-1 bg-slate-400 text-slate-800 text-xs"
-              >
-                {tag}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-lime-600 pointer-events-none opacity-10" />
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-lime-600 opacity-10" />
       </Dialog.Trigger>
 
       <Dialog.Portal>
-        <Dialog.Overlay className="inset-0 fixed bg-black/60" />
-        <Dialog.Content className="fixed inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-[640px] max-h-[70vh] h-full w-[90vw] md:w-full overflow-auto bg-slate-800 rounded-md flex flex-col outline-none">
-          <Dialog.Close className="absolute top-0 right-0 p-1.5 text-slate-400 hover:text-slate-100">
+        <Dialog.Overlay className="fixed inset-0 bg-black/60" />
+        <Dialog.Content className="fixed inset-0 left-1/2 top-1/2 flex h-full max-h-[70vh] w-[90vw] -translate-x-1/2 -translate-y-1/2 flex-col overflow-auto rounded-md bg-slate-800 outline-none md:w-full md:max-w-[640px]">
+          <Dialog.Close className="absolute right-0 top-0 p-1.5 text-slate-400 hover:text-slate-100">
             <X className="size-5" />
           </Dialog.Close>
 
-          <div className="flex flex-col w-full min-h-full h-full p-5 gap-5">
-            <div className="flex gap-10 items-center">
-              <p className="text-2xl text-lime-600 font-bold">{project.name}</p>
+          <div className="flex h-full min-h-full w-full flex-col gap-5 p-5">
+            <div className="flex items-center gap-10">
+              <p className="text-2xl font-bold text-lime-600">{project.name}</p>
               <p
-                className={`border-l-[2px] border-l-lime-600 p-2 text-sm text-slate-200 rounded-r-md ${
+                className={`rounded-r-md border-l-[2px] border-l-lime-600 p-2 text-sm text-slate-200 ${
                   project.status === "In progress"
                     ? "bg-orange-500"
                     : "bg-green-500"
@@ -88,7 +74,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <a
                 href={project.githubURL}
                 target="_blank"
-                className="border-b-transparent border-b-[2px] hover:border-b-[2px] hover:border-b-lime-600 hover:scale-125"
+                className="border-b-[2px] border-b-transparent hover:scale-125 hover:border-b-[2px] hover:border-b-lime-600"
               >
                 <Image src={Github} alt="github" width={24} height={24} />
               </a>
@@ -97,7 +83,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <a
                   href={project.url}
                   target="_blank"
-                  className="border-b-transparent border-b-[2px] hover:border-b-[2px] hover:border-b-lime-600 hover:scale-125"
+                  className="border-b-[2px] border-b-transparent hover:scale-125 hover:border-b-[2px] hover:border-b-lime-600"
                 >
                   <LinkIcon width={24} height={24} />
                 </a>
@@ -109,7 +95,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <Link
               href={project.url ? project.url : project.githubURL}
               target="_blank"
-              className="self-center hover:ring-2 hover:ring-lime-600 rounded-md"
+              className="self-center rounded-md hover:ring-2 hover:ring-lime-600"
             >
               <Image
                 src={project.thumbnail}
@@ -120,15 +106,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               />
             </Link>
 
-            <div className="flex flex-col w-full gap-2">
-              <p className="text-lg text-slate-600 font-bold">
+            <div className="flex w-full flex-col gap-2">
+              <p className="text-lg font-bold text-slate-600">
                 Technologies used:
               </p>
               <div className="flex flex-wrap gap-2 pb-5">
                 {project.tags.map((tag) => (
                   <div
                     key={tag}
-                    className="rounded-md p-1 bg-slate-400 text-slate-800 text-xs"
+                    className="rounded-md bg-slate-400 p-1 text-xs text-slate-800"
                   >
                     <p>{tag}</p>
                   </div>

@@ -21,17 +21,17 @@ export default function ProjectsSummary() {
 
   useEffect(() => {
     const filtered = projects.filter((project) =>
-      project.name.toLowerCase().includes(filter.toLowerCase())
+      project.name.toLowerCase().includes(filter.toLowerCase()),
     );
     setFilteredProjects(filtered);
   }, [projects, filter]);
 
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 mt-24">
+    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-16 p-4">
       <div className="flex flex-col gap-6">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <Blocks />
-          <h3 className="text-xl md:text-2xl font-bold">My projects</h3>
+          <h3 className="text-xl font-bold md:text-2xl">My projects</h3>
         </div>
         <div>
           <input
@@ -39,10 +39,10 @@ export default function ProjectsSummary() {
             placeholder="Filter projects by name..."
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className=" bg-transparent rounded-md py-2 text-xl font-semibold tracking-tight text-lime-600 placeholder:text-slate-600 outline-none"
+            className=" rounded-md bg-transparent py-2 text-xl font-semibold tracking-tight text-lime-600 outline-none placeholder:text-slate-600"
           />
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[450px] gap-6">
+        <div className="grid auto-rows-[300px] gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => {
             return <ProjectCard project={project} key={project.id} />;
           })}

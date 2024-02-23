@@ -4,13 +4,13 @@ import { Contact } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 animate-slide-in-left ">
+    <div className="flex w-full max-w-screen-lg animate-slide-in-left flex-col gap-16 p-4 ">
       <h1
-        className={`text-slate-600 text-3xl tracking-tighter italic text-center md:text-start`}
+        className={`text-center text-3xl italic tracking-tighter text-slate-600 md:text-start`}
       >
         Meet{" "}
         <span
-          className={`text-lime-600 font-bold underline hover:text-lime-500 `}
+          className={`font-bold text-lime-600 underline hover:text-lime-500 `}
         >
           Caio Bukvar
         </span>
@@ -18,9 +18,9 @@ export default function About() {
       </h1>
 
       <div className="flex flex-col gap-6 ">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <Contact />
-          <h3 className="text-xl md:text-2xl font-bold">About me</h3>
+          <h3 className="text-xl font-bold md:text-2xl">About me</h3>
         </div>
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-6 text-sm md:text-base">
           <p>
