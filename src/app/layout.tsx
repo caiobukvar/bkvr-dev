@@ -9,7 +9,7 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "BKVR",
+  title: "Caio Bukvar - BKVR",
   description: "Software Developer Portfolio",
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
   robots: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://bkvr.dev.br"),
   openGraph: {
-    images: "/opengraph-image.png",
+    images: "/public/images/opengraph-image.png",
   },
 };
 

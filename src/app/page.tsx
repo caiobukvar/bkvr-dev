@@ -6,46 +6,10 @@ import Experience from "./components/Experience";
 import ProjectsSummary from "./components/ProjectsSummary";
 import Socials from "./components/Socials";
 import Avatar from "/public/images/avatar2.png";
-import Head from "next/head";
-import { Metadata } from "next";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
-  return {
-    title: "Caio Bukvar's Portfolio",
-    description: "Software Developer Portfolio",
-    keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
-    robots: {
-      googleBot: {
-        index: true,
-      },
-    },
-    metadataBase: new URL("https://bkvr.dev.br"),
-    openGraph: {
-      images: "/opengraph-image.png",
-    },
-  };
-}
 
 export default function Home() {
   return (
     <main>
-      <Head>
-        <title>Caio Bukvar's Portfolio</title>
-        <meta property="og:title" content="Caio Bukvar's Portfolio" />
-        <meta
-          property="og:description"
-          content="Software Developer Portfolio"
-        />
-        <meta property="og:image" content="/opengraph-image.png" />
-        <meta property="og:url" content="https://bkvr.dev.br" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Caio Bukvar's Portfolio" />
-      </Head>
-
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
         <div className="flex flex-col items-center gap-2 text-center">
           <Image
