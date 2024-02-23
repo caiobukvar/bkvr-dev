@@ -9,18 +9,17 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  openGraph: {
-    images: "/public/images/opengraph-image.png",
-    title: "Caio Bukvar - BKVR",
-    description: "Software Developer Portfolio",
-  },
+  metadataBase: new URL("https://bkvr.dev.br"),
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
   robots: {
     googleBot: {
       index: true,
     },
   },
-  metadataBase: new URL("https://bkvr.dev.br"),
+  openGraph: {
+    images:
+      "https://opengraph.b-cdn.net/production/documents/9ee1429b-345f-4bdc-82ed-2f0a3ff3ac31.png?token=03Sk1W-up-b-zlFQnd-agWkAFHSHhrCAXdobSRLfQhs&height=601&width=1200&expires=33244695074",
+  },
 };
 
 export default function RootLayout({
@@ -30,13 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="min-h-screen bg-slate-900 text-slate-400">
-      <Head>
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
-      </Head>
-
       <Toaster
         richColors
         toastOptions={{
