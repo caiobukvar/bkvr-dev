@@ -19,6 +19,11 @@ export const metadata: Metadata = {
       index: true,
     },
   },
+  openGraph: {
+    title: "Caio Bukvar - BKVR",
+    description: "Caio Bukvar's portfolio as a software developer",
+    images: [{ url: "/app/opengraph-image.png" }],
+  },
 };
 
 export default function RootLayout({
