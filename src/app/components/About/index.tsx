@@ -27,7 +27,7 @@ export default function About() {
             Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.
           </p>
           <p>
-            Started my career on 2021, fell in love with programming when I
+            Started my career in 2021, fell in love with programming when I
             started a fullstack development course. That was my first glance on
             the tech area, besides gaming, making me hungry for knowledge.
           </p>
