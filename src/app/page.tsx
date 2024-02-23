@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Caio Bukvar's portfolio</title>
         <meta name="description" content="Software Developer Portfolio" />
         <meta property="og:url" content="https://www.bkvr.dev.br" />
         <meta property="og:type" content="website" />
