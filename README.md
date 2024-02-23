@@ -26,37 +26,37 @@ This is a website is being created as a portfolio to show a bit about myself. It
 > You can use the navbar to navigate the portfolio
 <div align='center' display='flex'>
 
-  ![avatar](/public/images/thumb-navbar.png)
+  ![avatar](/public/images/v2/thumb-navbar.png)
 </div><br><br>
 
 > The about section tells a little about me, my skills and my development carrer, also a few curiosities!
 <div align='center' display='flex'>
 
-  ![about](/public/images/thumb-about.png)
+  ![about](/public/images/v2/thumb-about.png)
 </div><br><br>
 
 > The experience section tells a little about my professional experience, where you can find more detailed information about each job
 <div align='center' display='flex'>
 
-  ![experience](/public/images/thumb-experience.png)
+  ![experience](/public/images/v2/thumb-experience.png)
 </div><br><br>
 
 > The projects area has interactive cards that opens a dialog to show more details about it
 <div align='center'>
 
-  ![projects](/public/images/thumb-projects.png)
+  ![projects](/public/images/v2/thumb-projects.png)
 </div><br><br>
 
 > In each project card you can see details about it and find links for each deploy and github repository
 <div align='center'>
 
-  ![projects2](/public/images/thumb-projects2.png)
+  ![projects2](/public/images/v2/thumb-projects2.png)
 </div><br><br>
 
 > Inside the social section, you can find links for my linkedin and github profiles and also send me an e-mail if you want to!
 <div align='center'>
 
-  ![social section](/public/images/thumb-socials.png)
+  ![social section](/public/images/v2/thumb-socials.png)
 </div><br><br>
 
 
