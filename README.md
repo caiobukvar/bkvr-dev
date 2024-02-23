@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./public/images/thumb-avatar.png" alt="avatar" />
+<img src="./public/images/avatar2.png" alt="avatar" width='600'/>
 </p>
 
 # **Meet Caio Bukvar, software developer!**
