@@ -1,5 +1,4 @@
-import { Inter, Unbounded, Jura, Source_Sans_3 } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Jura, Source_Sans_3, Unbounded } from "next/font/google";
 
 // define your variable fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -9,4 +8,4 @@ const jura = Jura({ subsets: ["latin"] });
 const sourceCodePro400 = Source_Sans_3({ weight: "400", subsets: ["latin"] });
 const sourceCodePro700 = Source_Sans_3({ weight: "700", subsets: ["latin"] });
 
-export { inter, unbounded, jura, sourceCodePro400, sourceCodePro700 };
+export { inter, jura, sourceCodePro400, sourceCodePro700, unbounded };

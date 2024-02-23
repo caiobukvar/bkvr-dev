@@ -20,7 +20,12 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="flex flex-col justify-between bg-slate-800 p-5 gap-3 w-full rounded-md overflow-hidden relative outline-none hover:ring-2 hover:ring-lime-600 text-left focus-visible:ring-2 focus-visible:ring-lime-600">
+      <Dialog.Trigger
+        className="flex flex-col justify-between text-left bg-slate-800 p-5 gap-3 w-full 
+          overflow-hidden relative outline-none rounded-md
+          hover:ring-2 hover:ring-lime-600 
+          focus-visible:ring-2 focus-visible:ring-lime-600"
+      >
         <div className="flex flex-col gap-2">
           <div
             className={`rounded-md p-[1px] text-xs text-slate-200 w-[90px] text-center ${
@@ -54,7 +59,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             );
           })}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-lime-600 to-black/0 pointer-events-none opacity-10" />
+
+        <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-lime-600 pointer-events-none opacity-10" />
       </Dialog.Trigger>
 
       <Dialog.Portal>

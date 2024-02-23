@@ -27,11 +27,11 @@ export default function ProjectsSummary() {
   }, [projects, filter]);
 
   return (
-    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 mt-12">
-      <div className="flex flex-col gap-4">
+    <div className="flex flex-col w-full max-w-screen-lg gap-16 p-4 mt-24">
+      <div className="flex flex-col gap-6">
         <div className="flex gap-2 items-center">
           <Blocks />
-          <h3 className="text-xl md:text-2xl font-bold">My projects:</h3>
+          <h3 className="text-xl md:text-2xl font-bold">My projects</h3>
         </div>
         <div>
           <input

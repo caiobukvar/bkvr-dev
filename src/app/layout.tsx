@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "BKVR Development",
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-900 text-slate-400 min-h-screen">
+    <html lang="en" className="bg-slate-900 text-slate-400 min-h-screen">
       <Toaster
         richColors
         toastOptions={{
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={unbounded.className}>
         <Navbar />
         {children}
+        <Footer />
         <SpeedInsights />
         <Analytics />
       </body>

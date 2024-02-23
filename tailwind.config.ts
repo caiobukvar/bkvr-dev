@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {},
       animation: {
         "bounce-short": "bounce 1s ease-in-out 4",
         "slide-in-left":
