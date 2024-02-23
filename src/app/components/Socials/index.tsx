@@ -95,12 +95,14 @@ export default function Socials() {
         >
           <Link
             href="https://github.com/caiobukvar"
-            className="flex gap-4 items-center hover:text-lime-500 hover:underline text-md md:text-base"
+            className="flex gap-4 hover:text-lime-500 hover:underline text-md md:text-base"
             target="_blank"
           >
-            {" "}
-            <Image src={Github} height={24} width={24} alt="github" />
-            Github
+            <Image src={Github} height={32} width={32} alt="github" />
+            <div className="flex flex-col ">
+              <p>Github</p>
+              <p className="text-xs text-slate-600">/caiobukvar</p>
+            </div>
           </Link>
 
           <Link
@@ -108,8 +110,11 @@ export default function Socials() {
             className="flex gap-4 items-center hover:text-lime-500 hover:underline text-md md:text-base"
             target="_blank"
           >
-            <Image src={Linkedin} height={24} width={24} alt="linkedin" />
-            Linkedin
+            <Image src={Linkedin} height={32} width={32} alt="github" />
+            <div className="flex flex-col ">
+              <p>Linkedin</p>
+              <p className="text-xs text-slate-600">in/caiobukvar</p>
+            </div>
           </Link>
         </div>
       </div>
