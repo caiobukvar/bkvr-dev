@@ -25,15 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="min-h-screen bg-slate-900 text-slate-400">
-      <meta property="og:description" content="Software Developer Portfolio" />
-      <meta
-        property="og:image"
-        content="/public/images/projects/thumb-bkvr.png"
-      />
-      <meta property="og:url" content="https://bkvr.dev.br" />
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="<BKVR />" />
-
       <Toaster
         richColors
         toastOptions={{
