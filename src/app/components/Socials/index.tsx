@@ -1,13 +1,13 @@
 "use client";
-import { HandMetal, Mail, Rocket } from "lucide-react";
+import { Mail, Rocket } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { toast } from "sonner";
+import { sendMail } from "../../../lib/api/sendMail";
+import Loading from "../Loading";
 import Github from "/public/images/github-logo.svg";
 import Linkedin from "/public/images/linkedin-logo.svg";
-import { useState } from "react";
-import { sendMail } from "../../../lib/api/sendMail";
-import { toast } from "sonner";
-import Loading from "../Loading";
 
 type ContactError = string | undefined;
 interface ContactDataState {
@@ -84,87 +84,83 @@ export default function Socials() {
           <Rocket />
           <h3 className="text-xl md:text-2xl font-bold">Want to know more?</h3>
         </div>
+
         <p className="text-md md:text-xl font-bold text-slate-600">
           Find me on
         </p>
 
-        <Link
-          href="https://github.com/caiobukvar"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600 text-md md:text-base"
-          target="_blank"
+        <div
+          className="flex flex-col gap-6 border-l-2 pl-6
+        border-lime-600"
         >
-          {" "}
-          <Image src={Github} height={24} width={24} alt="github" />
-          Github
-        </Link>
+          <Link
+            href="https://github.com/caiobukvar"
+            className="flex gap-4 items-center hover:text-lime-500 hover:underline text-md md:text-base"
+            target="_blank"
+          >
+            {" "}
+            <Image src={Github} height={24} width={24} alt="github" />
+            Github
+          </Link>
 
-        <Link
-          href="https://www.linkedin.com/in/caiobukvar/"
-          className="flex gap-4 items-center hover:underline hover:decoration-lime-600 hover:text-lime-600 text-md md:text-base"
-          target="_blank"
-        >
-          <Image src={Linkedin} height={24} width={24} alt="linkedin" />
-          Linkedin
-        </Link>
+          <Link
+            href="https://www.linkedin.com/in/caiobukvar/"
+            className="flex gap-4 items-center hover:text-lime-500 hover:underline text-md md:text-base"
+            target="_blank"
+          >
+            <Image src={Linkedin} height={24} width={24} alt="linkedin" />
+            Linkedin
+          </Link>
+        </div>
       </div>
 
-      <form
-        className="flex flex-col gap-8 rounded-md  "
-        onSubmit={(e) => onSubmit(e)}
-      >
+      <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
         <div className="flex gap-2 items-center">
           <p className="text-xl md:text-2xl font-bold tracking-tight">
-            Say hello!
+            Say hello
           </p>
         </div>
 
-        <div className="flex flex-col w-full sm:flex-row gap-6 ">
-          <div className="flex flex-col font-bold w-full ">
-            <div
-              className="border-t-2 border-l-2  w-40 h-2 animate-pulse 
-              border-lime-600"
-            />
-
-            <input
-              type="text"
-              name="email"
-              id="email"
-              value={values.email}
-              placeholder="Your e-mail:"
+        <div className="flex flex-col gap-4 border-l-2 border-lime-600">
+          <div className="flex flex-col w-full sm:flex-row gap-6 pl-6">
+            <div className="flex flex-col font-bold w-full ">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                value={values.email}
+                placeholder="Your e-mail"
+                onChange={(e) => handleChange(e)}
+                className="bg-slate-800 p-2 text-md rounded-md text-slate-400 outline-none tracking-tight
+                placeholder:text-slate-600 
+                hover:placeholder:text-lime-500
+                focus:placeholder-lime-600"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col font-bold w-full  pl-6">
+            <textarea
+              placeholder="Insert content here"
+              name="content"
+              id="content"
+              value={values.content}
               onChange={(e) => handleChange(e)}
-              className="bg-transparent p-2 text-md font-semibold
-              text-slate-400 outline-none tracking-tight
-              placeholder:text-slate-600 focus:placeholder-lime-600
-              hover:placeholder:text-lime-600"
+              className="bg-slate-800 p-2 text-md min-h-[200px] rounded-md text-slate-400 outline-none tracking-tight
+            placeholder:text-slate-600 
+            hover:placeholder:text-lime-500
+            focus:placeholder-lime-600"
             />
           </div>
-        </div>
-        <div className="flex flex-col font-bold w-full ">
-          <div
-            className="border-t-2 border-l-2 w-60 h-2 animate-pulse
-            border-lime-600"
-          />
-
-          <textarea
-            placeholder="Insert content here"
-            name="content"
-            id="content"
-            value={values.content}
-            onChange={(e) => handleChange(e)}
-            className="bg-transparent p-2 text-md font-semibold min-h-[200px]
-            text-slate-400 outline-none tracking-tight
-            placeholder:text-slate-600 focus:placeholder-lime-600
-            hover:placeholder:text-lime-600"
-          />
         </div>
         <div>
           <button
             type="submit"
-            className="flex gap-2 justify-center w-full md:w-auto min-w-40 bg-slate-700 hover:bg-slate-600 outline-none
-            hover:ring-2 hover:ring-lime-600 hover:underline
-            text-lime-600 text-md rounded-md p-3 animate-slide-in-left
+            className="relative flex gap-2 justify-center w-full md:w-auto min-w-40  outline-none shadow-sm
+            text-md rounded-md p-3 animate-slide-in-left 
+            shadow-lime-700 text-lime-600   bg-slate-700
+            hover:ring-2 hover:ring-lime-500 hover:text-lime-500 hover:bg-slate-600 hover:underline
             focus-visible:ring-2 focus-visible:ring-lime-600
-          shadow-lime-700 shadow-sm relative"
+           "
           >
             Send <Mail />
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 pointer-events-none opacity-10" />

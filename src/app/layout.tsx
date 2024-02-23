@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "BKVR Development",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={unbounded.className}>
         <Navbar />
         {children}
+        <Footer />
         <SpeedInsights />
         <Analytics />
       </body>
