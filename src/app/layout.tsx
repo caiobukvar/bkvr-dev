@@ -9,17 +9,18 @@ import "./globals.css";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Caio Bukvar - BKVR",
-  description: "Software Developer Portfolio",
+  openGraph: {
+    images: "/public/images/opengraph-image.png",
+    title: "Caio Bukvar - BKVR",
+    description: "Software Developer Portfolio",
+  },
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
   robots: {
     googleBot: {
       index: true,
     },
   },
-  openGraph: {
-    images: "/public/images/opengraph-image.png",
-  },
+  metadataBase: new URL("https://bkvr.dev.br"),
 };
 
 export default function RootLayout({
