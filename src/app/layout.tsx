@@ -6,6 +6,7 @@ import { unbounded } from "../styles/fonts";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "<BKVR />",
