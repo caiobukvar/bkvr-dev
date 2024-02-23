@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images:
-      "https://opengraph.b-cdn.net/production/documents/9ee1429b-345f-4bdc-82ed-2f0a3ff3ac31.png?token=03Sk1W-up-b-zlFQnd-agWkAFHSHhrCAXdobSRLfQhs&height=601&width=1200&expires=33244695074",
+      "https://opengraph.b-cdn.net/production/documents/ea4238a9-6a7a-4857-a787-40af9ca4f54b.png?token=AQMg4Fiez6vis005O39556OlZPohHIH3Q1U8yP-i6-E&height=481&width=498&expires=33244698999",
   },
 };
 
