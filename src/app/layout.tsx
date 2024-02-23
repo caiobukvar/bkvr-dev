@@ -17,8 +17,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    images:
-      "https://opengraph.b-cdn.net/production/documents/ea4238a9-6a7a-4857-a787-40af9ca4f54b.png?token=AQMg4Fiez6vis005O39556OlZPohHIH3Q1U8yP-i6-E&height=481&width=498&expires=33244698999",
+    images: {
+      url: "https://opengraph.b-cdn.net/production/documents/ea4238a9-6a7a-4857-a787-40af9ca4f54b.png?token=AQMg4Fiez6vis005O39556OlZPohHIH3Q1U8yP-i6-E&height=481&width=498&expires=33244698999",
+      width: 498,
+      height: 481,
+      alt: "Portfolio thumbnail",
+    },
   },
 };
 
