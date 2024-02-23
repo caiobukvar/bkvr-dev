@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
 import About from "./components/About";
@@ -33,8 +34,16 @@ export default function Home() {
   return (
     <main>
       <Head>
+        <title>Caio Bukvar's Portfolio</title>
+        <meta property="og:title" content="Caio Bukvar's Portfolio" />
+        <meta
+          property="og:description"
+          content="Software Developer Portfolio"
+        />
         <meta property="og:image" content="/opengraph-image.png" />
-        <meta property="og:image:type" content="png" />
+        <meta property="og:url" content="https://bkvr.dev.br" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Caio Bukvar's Portfolio" />
       </Head>
 
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
