@@ -1,15 +1,19 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import ProjectsSummary from "./components/ProjectsSummary";
-import Socials from "./components/Socials";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import ProjectsSummary from "../components/ProjectsSummary";
+import Socials from "../components/Socials";
 import Avatar from "/public/images/avatar2.png";
 
 export default function Home() {
+  const t = useTranslations("App");
+
   return (
-    <main>
+    <main className="bg-red-200">
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
+        <h1>{t("title")}</h1>
         <div className="flex flex-col items-center gap-2 text-center">
           <Image
             src={Avatar}
