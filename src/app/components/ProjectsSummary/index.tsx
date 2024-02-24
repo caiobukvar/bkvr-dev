@@ -23,7 +23,6 @@ interface Props {
 }
 
 export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
-  console.log(projectSummaryTranslations);
   const { title, inputPlaceholder } = projectSummaryTranslations;
   const [projects, setProjects] = useState<Projects[]>(repos);
   const [filteredProjects, setFilteredProjects] = useState<Projects[]>(repos);

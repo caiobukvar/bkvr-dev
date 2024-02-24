@@ -42,5 +42,29 @@
     "input": {
       "placeholder": "Filter projects by name..."
     }
+  },
+  "Socials": {
+    "title": "Want to know more?",
+    "find-me": "Find me on",
+    "form": {
+      "title": "Say hello",
+      "input-placeholder": "Your email",
+      "textarea-placeholder": "Insert content here",
+      "button": "Send"
+    },
+    "toasts": {
+      "error": {
+        "content": {
+          "msg": "Please inform email and content.",
+          "description": "E-mail and content are required fields."
+        },
+        "failed": {
+          "msg": "Failed to send e-mail."
+        }
+      },
+      "success": {
+        "msg": "Mail sent!"
+      }
+    }
   }
 }

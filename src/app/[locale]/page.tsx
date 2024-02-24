@@ -11,10 +11,24 @@ import IntlBar from "../components/IntlBar";
 export default function Home() {
   const t = useTranslations("App");
   const p = useTranslations("Projects");
+  const s = useTranslations("Socials");
 
   const projectSummaryTranslations = {
     title: `${p("title")}`,
     inputPlaceholder: `${p("input.placeholder")}`,
+  };
+
+  const socialsTranslations = {
+    title: `${s("title")}`,
+    findMe: `${s("find-me")}`,
+    formTitle: `${s("form.title")}`,
+    formInputPlaceholder: `${s("form.input-placeholder")}`,
+    formTextareaPlaceholder: `${s("form.textarea-placeholder")}`,
+    formButton: `${s("form.button")}`,
+    tSuccessMsg: `${s("toasts.success.msg")}`,
+    tErrorMsg: `${s("toasts.error.content.msg")}`,
+    tErrorDesc: `${s("toasts.error.content.description")}`,
+    tFailMsg: `${s("toasts.error.content.description")}`,
   };
 
   return (
@@ -80,7 +94,7 @@ export default function Home() {
       </section>
 
       <section className="flex min-h-screen  flex-col items-center" id="social">
-        <Socials />
+        <Socials socialsTranslations={socialsTranslations} />
       </section>
     </main>
   );

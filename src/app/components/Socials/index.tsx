@@ -31,9 +31,38 @@ const initState: ContactDataState = {
   error: undefined,
 };
 
-export default function Socials() {
+interface SocialsTranslations {
+  title: string;
+  findMe: string;
+  formTitle: string;
+  formInputPlaceholder: string;
+  formTextareaPlaceholder: string;
+  formButton: string;
+  tSuccessMsg: string;
+  tErrorMsg: string;
+  tErrorDesc: string;
+  tFailMsg: string;
+}
+
+interface Props {
+  socialsTranslations: SocialsTranslations;
+}
+
+export default function Socials({ socialsTranslations }: Props) {
   const [contactData, setContactData] = useState(initState);
   const [touched, setTouched] = useState<{ [key: string]: boolean }>({});
+  const {
+    title,
+    findMe,
+    formTitle,
+    formInputPlaceholder,
+    formTextareaPlaceholder,
+    formButton,
+    tSuccessMsg,
+    tErrorMsg,
+    tErrorDesc,
+    tFailMsg,
+  } = socialsTranslations;
 
   const { values, isLoading, error } = contactData;
 
@@ -55,12 +84,12 @@ export default function Socials() {
     e.preventDefault();
 
     if (!values.email || !values.content) {
-      return toast.error("Please inform email and content.", {
+      return toast.error(`${tErrorMsg}`, {
         style: {
           color: "rgb(248 113 113)",
           borderColor: "rgb(248 113 113)",
         },
-        description: "E-mail and content are required fields.",
+        description: `${tErrorDesc}`,
       });
     }
 
@@ -75,7 +104,7 @@ export default function Socials() {
 
       setContactData(initState);
 
-      toast.success("Mail sent!", {
+      toast.success(`${tSuccessMsg}`, {
         style: {
           color: "#a3e635",
           borderColor: "#a3e635",
@@ -88,7 +117,7 @@ export default function Socials() {
         isLoading: false,
         error: typedError.message,
       }));
-      toast.error("Failed to send e-mail.", {
+      toast.error(`${tFailMsg}`, {
         style: {
           color: "rgb(248 113 113)",
           borderColor: "rgb(248 113 113)",
@@ -102,12 +131,10 @@ export default function Socials() {
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <Rocket />
-          <h3 className="text-xl font-bold md:text-2xl">Want to know more?</h3>
+          <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
         </div>
 
-        <p className="text-md font-bold text-slate-600 md:text-xl">
-          Find me on
-        </p>
+        <p className="text-md font-bold text-slate-600 md:text-xl">{findMe}</p>
 
         <div
           className="flex flex-col gap-6 border-l-2 border-lime-600
@@ -142,7 +169,7 @@ export default function Socials() {
       <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
         <div className="flex items-center gap-2">
           <p className="text-xl font-bold tracking-tight md:text-2xl">
-            Say hello
+            {formTitle}
           </p>
         </div>
 
@@ -154,7 +181,7 @@ export default function Socials() {
                 name="email"
                 id="email"
                 value={values.email}
-                placeholder="Your e-mail"
+                placeholder={formInputPlaceholder}
                 className="text-md rounded-md bg-slate-800 p-2 tracking-tight text-slate-400 outline-none
                 placeholder:text-slate-600 
                 hover:placeholder:text-lime-500
@@ -166,7 +193,7 @@ export default function Socials() {
           </div>
           <div className="flex w-full flex-col pl-6  font-bold">
             <textarea
-              placeholder="Insert content here"
+              placeholder={formTextareaPlaceholder}
               name="content"
               id="content"
               value={values.content}
@@ -190,7 +217,7 @@ export default function Socials() {
             ${(!values.email || !values.content) && "disabled opacity-70 hover:text-red-400 hover:ring-red-400"}
            `}
           >
-            Send <Mail />
+            {formButton} <Mail />
             <div
               className={`pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b opacity-10 
               ${!values.email || !values.content ? " from-red-300" : "from-lime-600"}`}
