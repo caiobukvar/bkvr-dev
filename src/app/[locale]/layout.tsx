@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Toaster } from "sonner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import "../../styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),

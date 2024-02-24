@@ -11,7 +11,7 @@ export default function Home() {
   const t = useTranslations("App");
 
   return (
-    <main className="bg-red-200">
+    <main>
       <section className="mt-12 flex min-h-screen flex-col items-center gap-6 ">
         <h1>{t("title")}</h1>
         <div className="flex flex-col items-center gap-2 text-center">
@@ -38,7 +38,7 @@ export default function Home() {
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
         >
           Work experience
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full rounded-md bg-gradient-to-b from-lime-600 opacity-10" />
         </Link>
       </section>
 
@@ -56,7 +56,7 @@ export default function Home() {
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
         >
           Personal projects
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full rounded-md bg-gradient-to-b from-lime-600 opacity-10" />
         </Link>
       </section>
 
