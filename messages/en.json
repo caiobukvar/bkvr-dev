@@ -36,5 +36,11 @@
         "i2": "major increase on communication skills and introduction to dailies, weeklys, reports, 1 on 1's;"
       }
     }
+  },
+  "Projects": {
+    "title": "My projects",
+    "input": {
+      "placeholder": "Filter projects by name..."
+    }
   }
 }

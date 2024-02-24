@@ -13,8 +13,18 @@ interface Projects {
   tags: string[];
   status: string;
 }
+interface ProjectSummaryTranslations {
+  title: string;
+  inputPlaceholder: string;
+}
 
-export default function ProjectsSummary() {
+interface Props {
+  projectSummaryTranslations: ProjectSummaryTranslations;
+}
+
+export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
+  console.log(projectSummaryTranslations);
+  const { title, inputPlaceholder } = projectSummaryTranslations;
   const [projects, setProjects] = useState<Projects[]>(repos);
   const [filteredProjects, setFilteredProjects] = useState<Projects[]>(repos);
   const [filter, setFilter] = useState("");
@@ -31,12 +41,12 @@ export default function ProjectsSummary() {
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <Blocks />
-          <h3 className="text-xl font-bold md:text-2xl">My projects</h3>
+          <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
         </div>
         <div>
           <input
             type="text"
-            placeholder="Filter projects by name..."
+            placeholder={inputPlaceholder}
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             className=" rounded-md bg-transparent py-2 text-xl font-semibold tracking-tight text-lime-600 outline-none placeholder:text-slate-600"

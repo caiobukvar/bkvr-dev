@@ -1,10 +1,4 @@
-import {
-  AtSign,
-  Briefcase,
-  Building,
-  ChevronRight,
-  GitCommitHorizontal,
-} from "lucide-react";
+import { Briefcase } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 /* eslint-disable react/no-unescaped-entities */

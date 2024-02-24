@@ -10,6 +10,12 @@ import IntlBar from "../components/IntlBar";
 
 export default function Home() {
   const t = useTranslations("App");
+  const p = useTranslations("Projects");
+
+  const projectSummaryTranslations = {
+    title: `${p("title")}`,
+    inputPlaceholder: `${p("input.placeholder")}`,
+  };
 
   return (
     <main>
@@ -68,7 +74,9 @@ export default function Home() {
         className="flex min-h-screen flex-col items-center"
         id="projects"
       >
-        <ProjectsSummary />
+        <ProjectsSummary
+          projectSummaryTranslations={projectSummaryTranslations}
+        />
       </section>
 
       <section className="flex min-h-screen  flex-col items-center" id="social">
