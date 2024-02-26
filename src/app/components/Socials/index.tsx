@@ -142,7 +142,8 @@ export default function Socials({ socialsTranslations }: Props) {
         >
           <Link
             href="https://github.com/caiobukvar"
-            className="text-md flex gap-4 hover:text-lime-500 hover:underline md:text-base"
+            className="text-md flex gap-4 hover:translate-x-2
+             hover:text-lime-500 hover:delay-75 md:text-base"
             target="_blank"
           >
             <Image src={Github} height={32} width={32} alt="github" />
@@ -154,7 +155,8 @@ export default function Socials({ socialsTranslations }: Props) {
 
           <Link
             href="https://www.linkedin.com/in/caiobukvar/"
-            className="text-md flex items-center gap-4 hover:text-lime-500 hover:underline md:text-base"
+            className="text-md flex items-center gap-4 hover:translate-x-2 hover:text-lime-500
+             hover:delay-75 md:text-base"
             target="_blank"
           >
             <Image src={Linkedin} height={32} width={32} alt="github" />

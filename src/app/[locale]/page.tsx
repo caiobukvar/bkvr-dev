@@ -56,9 +56,9 @@ export default function Home() {
 
         <Link
           href="#experience"
-          className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
+          className="text-md relative rounded-md bg-slate-700 
           p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
-            hover:bg-slate-600 hover:text-lime-500 hover:underline hover:ring-2
+            hover:animate-pulse hover:bg-slate-600 hover:text-lime-500 hover:underline hover:ring-2
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
         >
           {t("button-1")}
@@ -74,10 +74,11 @@ export default function Home() {
 
         <Link
           href="#projects"
-          className="text-md relative animate-slide-in-left rounded-md bg-slate-700 
-          p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
-            hover:bg-slate-600 hover:text-lime-500 hover:underline hover:ring-2
-            hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
+          className="text-md relative rounded-md bg-slate-700 
+            p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
+          hover:animate-pulse hover:bg-slate-600 hover:text-lime-500 hover:underline
+          hover:ring-2 hover:ring-lime-500 focus-visible:ring-2
+          focus-visible:ring-lime-600"
         >
           {t("button-2")}
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full rounded-md bg-gradient-to-b from-lime-600 opacity-10" />

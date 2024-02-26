@@ -1,8 +1,8 @@
 {
   "App": {
     "title": "Hello world!",
-    "button-1": "Work experience",
-    "button-2": "Personal projects"
+    "button-1": "Experience",
+    "button-2": "Projects"
   },
   "About": {
     "title-1": "Meet ",
@@ -22,9 +22,9 @@
     "job2": {
       "description": "I was responsible for developing unmaze's platform and maintaining it, focused on React. I've contributed with several crucial insights, which lead us to:",
       "list": {
-        "i1": "Revenue increased 40%;",
-        "i2": "Total user amount increased by 60%;",
-        "i3": "Number of active users increased by 50%;",
+        "i1": "revenue increased 40%;",
+        "i2": "total user amount increased by 60%;",
+        "i3": "number of active users increased by 50%;",
         "i4": "B2B clients raised from 0 to 8 (last trimester 2022);",
         "i5": "NPS kept above 85 throughout 2022."
       }
@@ -48,14 +48,14 @@
     "find-me": "Find me on",
     "form": {
       "title": "Say hello",
-      "input-placeholder": "Your email",
+      "input-placeholder": "Your e-mail",
       "textarea-placeholder": "Insert content here",
       "button": "Send"
     },
     "toasts": {
       "error": {
         "content": {
-          "msg": "Please inform email and content.",
+          "msg": "Please inform e-mail and content.",
           "description": "E-mail and content are required fields."
         },
         "failed": {
@@ -66,5 +66,8 @@
         "msg": "Mail sent!"
       }
     }
+  },
+  "Footer": {
+    "text": "Designed by"
   }
 }

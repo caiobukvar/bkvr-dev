@@ -1,7 +1,14 @@
+import { useTranslations } from "next-intl";
+
 function Footer() {
+  const version = process.env.VERSION;
+  const t = useTranslations("Footer");
   return (
-    <div className="flex w-full items-center justify-center p-4 text-xs">
-      Designed by Caio Bukvar - 2024 © (v1.0)
+    <div className="flex w-full items-center justify-center gap-2 p-4 text-xs">
+      <p className="text-slate-600">{t("text")} BKVR </p>
+      <p className="border-l-2 border-slate-600 pl-2 text-lime-600">
+        v{version}
+      </p>
     </div>
   );
 }
