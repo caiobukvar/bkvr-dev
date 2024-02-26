@@ -1,0 +1,74 @@
+{
+  "App": {
+    "title": "Hello world!",
+    "button-1": "Experience",
+    "button-2": "Projects"
+  },
+  "About": {
+    "title-1": "Meet ",
+    "title-2": ", software developer.",
+    "about-me": "About me",
+    "about-p1": "Hi! I'm 30 years old, from Brazil, delivering solutions since 2021.",
+    "about-p2": "Fell in love with programming when I started a fullstack development course. That was my first glance on the tech area, besides gaming, making me hungry for knowledge.",
+    "about-p3": "Nowadays, I'm commited to improve my skills as a developer, while learning a bit about design, typography and UI/UX, scratching some designs here and there.",
+    "about-p4": "I'm always aiming to deliver the best possible solution."
+  },
+  "Experience": {
+    "title": "Professional experience",
+    "frontend-dev": "Frontend Developer",
+    "march": "Mar.",
+    "august": "Aug.",
+    "november": "Nov.",
+    "job2": {
+      "description": "I was responsible for developing unmaze's platform and maintaining it, focused on React. I've contributed with several crucial insights, which lead us to:",
+      "list": {
+        "i1": "revenue increased 40%;",
+        "i2": "total user amount increased by 60%;",
+        "i3": "number of active users increased by 50%;",
+        "i4": "B2B clients raised from 0 to 8 (last trimester 2022);",
+        "i5": "NPS kept above 85 throughout 2022."
+      }
+    },
+    "job1": {
+      "description": "I was responsible for creating layouts based on figma designs, focused on React.",
+      "list": {
+        "i1": "major increase of my coding skills along with a senior dev reviewing my code;",
+        "i2": "major increase on communication skills and introduction to dailies, weeklys, reports, 1 on 1's;"
+      }
+    }
+  },
+  "Projects": {
+    "title": "My projects",
+    "input": {
+      "placeholder": "Filter projects by name..."
+    },
+    "project-techs": "Technologies used:"
+  },
+  "Socials": {
+    "title": "Want to know more?",
+    "find-me": "Find me on",
+    "form": {
+      "title": "Say hello",
+      "input-placeholder": "Your e-mail",
+      "textarea-placeholder": "Insert content here",
+      "button": "Send"
+    },
+    "toasts": {
+      "error": {
+        "content": {
+          "msg": "Please inform e-mail and content.",
+          "description": "E-mail and content are required fields."
+        },
+        "failed": {
+          "msg": "Failed to send e-mail."
+        }
+      },
+      "success": {
+        "msg": "Mail sent!"
+      }
+    }
+  },
+  "Footer": {
+    "text": "Designed by"
+  }
+}

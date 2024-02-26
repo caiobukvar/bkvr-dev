@@ -16,9 +16,13 @@ interface ProjectCardProps {
     tags: string[];
     status: string;
   };
+  projectTechs: string;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({
+  project,
+  projectTechs,
+}: ProjectCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger
@@ -27,15 +31,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           hover:ring-2 hover:ring-lime-600 
           focus-visible:ring-2 focus-visible:ring-lime-600"
       >
-        <div className="flex flex-col gap-2">
+        <div className="flex w-full flex-col gap-2">
           <div
-            className={`w-[90px] rounded-md p-[1px] text-center text-xs text-slate-200 ${
-              project.status === "In progress"
+            className={`max-w-32 rounded-md p-[1px] text-center text-xs text-slate-200 ${
+              project.status === "In progress" ||
+              project.status === "Em progresso"
                 ? "bg-orange-600"
                 : "bg-green-600"
             }`}
           >
-            {project.status}
+            <span>{project.status}</span>
           </div>
           <p className="text-xl text-lime-600">{project.name}</p>
         </div>
@@ -120,9 +125,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </Link>
 
             <div className="flex w-full flex-col gap-2">
-              <p className="text-lg font-bold text-slate-600">
-                Technologies used:
-              </p>
+              <p className="text-lg font-bold text-slate-600">{projectTechs}</p>
               <div className="flex flex-wrap gap-2 pb-5">
                 {project.tags.map((tag) => (
                   <div

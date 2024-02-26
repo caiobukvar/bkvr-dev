@@ -1,0 +1,73 @@
+{
+  "App": {
+    "button-1": "Experiência",
+    "button-2": "Projetos"
+  },
+  "About": {
+    "title-1": "Conheça ",
+    "title-2": ", desenvolvedor de software.",
+    "about-me": "Sobre mim",
+    "about-p1": "Olá! Tenho 30 anos e sou do Brasil, entregando soluções desde 2021.",
+    "about-p2": "Me apaixonei por programação quando comecei um curso de desenvolvimento fullstack.  Este foi meu primeiro contato com a área tech, tirando jogos, me deixando faminto por conhecimento.",
+    "about-p3": "Hoje em dia, estou empenhado em melhorar minhas habilidades como desenvolvedor, enquanto aprendo um pouco sobre design, tipografia e UI/UX, rabiscando alguns designs aqui e ali.",
+    "about-p4": "Estou sempre procurando entregar a melhor solução possível."
+  },
+  "Experience": {
+    "title": "Experiência profissional",
+    "frontend-dev": "Desenvolvedor Frontend",
+    "march": "Mar.",
+    "august": "Ago.",
+    "november": "Nov.",
+    "job2": {
+      "description": "Responsável pela criação e manutenção do frontend da plataforma Unmaze, com foco em React. Contribui com vários insights cruciais para algumas features na plataforma, que nos proporcionou:",
+      "list": {
+        "i1": "aumento da receita com a nova plataforma em 40%;",
+        "i2": "aumento de usuários na plataforma de mais de 60%;",
+        "i3": "número total de usários ativos na plataforma aumentou em mais de 50%;",
+        "i4": "número de clientes B2B foi de 0 a 8 (ultimo trimestre 2022);",
+        "i5": "NPS manteve-se em 85+ ao longo do ano de 2022."
+      }
+    },
+    "job1": {
+      "description": "Responsável pela criação de designs baseados no figma, com foco em React.",
+      "list": {
+        "i1": "desenvolvimento de minhas habilidades técnicas com o acompanhamento de desenvolvedores sênior, com revisões de código",
+        "i2": "melhora nas habilidades de comunicação e introdução a reuniões diárias, semanais e mensais, 1 a 1."
+      }
+    }
+  },
+  "Projects": {
+    "title": "Meus projetos",
+    "input": {
+      "placeholder": "Filtrar por nome do projeto..."
+    },
+    "project-techs": "Tecnologias utilizadas:"
+  },
+  "Socials": {
+    "title": "Quer saber mais?",
+    "find-me": "Me encontre em",
+    "form": {
+      "title": "Fale oi",
+      "input-placeholder": "Seu e-mail",
+      "textarea-placeholder": "Insira o conteúdo aqui",
+      "button": "Enviar"
+    },
+    "toasts": {
+      "error": {
+        "content": {
+          "msg": "Favor informar e-mail e conteúdo.",
+          "description": "E-mail e conteúdo são campos obrigatórios."
+        },
+        "failed": {
+          "msg": "Falha ao enviar e-mail."
+        }
+      },
+      "success": {
+        "msg": "Mensagem enviada!"
+      }
+    }
+  },
+  "Footer": {
+    "text": "Designed by"
+  }
+}

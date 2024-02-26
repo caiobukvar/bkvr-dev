@@ -1,13 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Analytics } from "@vercel/analytics/react";
+import { unbounded } from "@/styles/fonts";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Toaster } from "sonner";
-import { unbounded } from "../styles/fonts";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import "./globals.css";
-import Head from "next/head";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import "../../styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
@@ -28,11 +26,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
   return (
-    <html lang="en" className="min-h-screen bg-slate-900 text-slate-400">
+    <html lang={locale} className="min-h-screen bg-slate-900 text-slate-400">
       <Toaster
         richColors
         toastOptions={{
@@ -41,6 +41,7 @@ export default function RootLayout({
           },
         }}
       />
+
       <body className={unbounded.className}>
         <Navbar />
         {children}

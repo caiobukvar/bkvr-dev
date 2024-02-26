@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Developer Portfolio",
-    "description": "This is my personal developer portfolio, a work in progress to show my skills and test new things!",
+    "description": "Este é meu portfólio, um projeto em progresso para mostrar minhas skills e testar novas coisas!",
     "url": "https://www.bkvr.dev.br",
     "githubURL": "https://github.com/caiobukvar/bkvr-dev",
     "thumbnail": "/images/projects/thumb-bkvr.png",
@@ -16,12 +16,12 @@
       "Lucide",
       "next-intl"
     ],
-    "status": "In progress"
+    "status": "Em progresso"
   },
   {
     "id": 2,
     "name": "ATT Notes",
-    "description": "Audio-to-text notes is note creation tool that automatically transcripts audio into text and saves data to localstorage only.",
+    "description": "Audio-to-text é uma ferramenta de criação de notas que transcreve áudio automaticamente para texto e salva os dados apenas no localstorage.",
     "url": "https://nlw-expert14-react.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/nlw-expert14-react",
     "thumbnail": "/images/projects/thumb-nlw.png",
@@ -36,12 +36,12 @@
       "Lucide",
       "localstorage"
     ],
-    "status": "Complete"
+    "status": "Completo"
   },
   {
     "id": 3,
     "name": "BR Advocacia",
-    "description": "Layout created to simulate a lawyer's website.",
+    "description": "Layout criado para simular um website para advogados.",
     "url": "https://br-adv.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/br-adv",
     "thumbnail": "/images/projects/thumb-bradv.png",
@@ -55,12 +55,12 @@
       "Google Maps API",
       "i18next"
     ],
-    "status": "Complete"
+    "status": "Completo"
   },
   {
     "id": 4,
     "name": "Wookie Pizza",
-    "description": "The project is a pizzeria menu, made for order customization, also counting with 'pizza of the day' promotion and a points system. It was made in a 4 day period limit to test what I could accomplish in said time.",
+    "description": "O projeto é um cardápio para pizzarias, feito para customização de pedido, contando também com um sistema de pontos e promoção de 'pizza do dia'. Feito com 4 dias de tempo limite, para testar o que poderia ser atingido nesse tempo.",
     "url": "https://wookie-pizza.vercel.app/",
     "githubURL": "https://github.com/caiobukvar/wookie-pizza",
     "thumbnail": "/images/projects/thumb-wookie.png",
@@ -72,6 +72,6 @@
       "Prisma",
       "PostgreSQL"
     ],
-    "status": "Complete"
+    "status": "Completo"
   }
 ]

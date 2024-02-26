@@ -1,8 +1,10 @@
 "use client";
-import repos from "@/lib/repos.json";
+import reposUS from "@/lib/repos.json";
+import reposPT from "@/lib/repos-pt.json";
 import { Blocks } from "lucide-react";
 import { useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard";
+import { usePathname } from "next/navigation";
 interface Projects {
   id: number;
   name: string;
@@ -13,10 +15,23 @@ interface Projects {
   tags: string[];
   status: string;
 }
+interface ProjectSummaryTranslations {
+  title: string;
+  inputPlaceholder: string;
+  projectTechs: string;
+}
 
-export default function ProjectsSummary() {
-  const [projects, setProjects] = useState<Projects[]>(repos);
-  const [filteredProjects, setFilteredProjects] = useState<Projects[]>(repos);
+interface Props {
+  projectSummaryTranslations: ProjectSummaryTranslations;
+}
+
+export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
+  const path = usePathname();
+  const currentRepo = path === "/pt" ? reposPT : reposUS;
+  const { title, inputPlaceholder, projectTechs } = projectSummaryTranslations;
+  const [projects, setProjects] = useState<Projects[]>(currentRepo);
+  const [filteredProjects, setFilteredProjects] =
+    useState<Projects[]>(currentRepo);
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
@@ -31,20 +46,26 @@ export default function ProjectsSummary() {
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <Blocks />
-          <h3 className="text-xl font-bold md:text-2xl">My projects</h3>
+          <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
         </div>
         <div>
           <input
             type="text"
-            placeholder="Filter projects by name..."
+            placeholder={inputPlaceholder}
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className=" rounded-md bg-transparent py-2 text-xl font-semibold tracking-tight text-lime-600 outline-none placeholder:text-slate-600"
+            className=" w-full rounded-md bg-transparent py-2 text-xl font-semibold tracking-tight text-lime-600 outline-none placeholder:text-slate-600"
           />
         </div>
         <div className="grid auto-rows-[280px] gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => {
-            return <ProjectCard project={project} key={project.id} />;
+            return (
+              <ProjectCard
+                project={project}
+                key={project.id}
+                projectTechs={projectTechs}
+              />
+            );
           })}
         </div>
       </div>
