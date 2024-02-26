@@ -41,7 +41,8 @@
     "title": "My projects",
     "input": {
       "placeholder": "Filter projects by name..."
-    }
+    },
+    "project-techs": "Technologies used:"
   },
   "Socials": {
     "title": "Want to know more?",

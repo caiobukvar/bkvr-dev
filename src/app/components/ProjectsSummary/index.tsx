@@ -18,6 +18,7 @@ interface Projects {
 interface ProjectSummaryTranslations {
   title: string;
   inputPlaceholder: string;
+  projectTechs: string;
 }
 
 interface Props {
@@ -27,7 +28,7 @@ interface Props {
 export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
   const path = usePathname();
   const currentRepo = path === "/pt" ? reposPT : reposUS;
-  const { title, inputPlaceholder } = projectSummaryTranslations;
+  const { title, inputPlaceholder, projectTechs } = projectSummaryTranslations;
   const [projects, setProjects] = useState<Projects[]>(currentRepo);
   const [filteredProjects, setFilteredProjects] =
     useState<Projects[]>(currentRepo);
@@ -58,7 +59,13 @@ export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
         </div>
         <div className="grid auto-rows-[280px] gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => {
-            return <ProjectCard project={project} key={project.id} />;
+            return (
+              <ProjectCard
+                project={project}
+                key={project.id}
+                projectTechs={projectTechs}
+              />
+            );
           })}
         </div>
       </div>

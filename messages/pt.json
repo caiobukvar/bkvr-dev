@@ -4,7 +4,7 @@
     "button-2": "Projetos"
   },
   "About": {
-    "title-1": "Conheça",
+    "title-1": "Conheça ",
     "title-2": ", desenvolvedor de software.",
     "about-me": "Sobre mim",
     "about-p1": "Olá! Tenho 30 anos e sou do Brasil, entregando soluções desde 2021.",
@@ -40,7 +40,8 @@
     "title": "Meus projetos",
     "input": {
       "placeholder": "Filtrar por nome do projeto..."
-    }
+    },
+    "project-techs": "Tecnologias utilizadas:"
   },
   "Socials": {
     "title": "Quer saber mais?",

@@ -16,9 +16,13 @@ interface ProjectCardProps {
     tags: string[];
     status: string;
   };
+  projectTechs: string;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({
+  project,
+  projectTechs,
+}: ProjectCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger
@@ -121,9 +125,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </Link>
 
             <div className="flex w-full flex-col gap-2">
-              <p className="text-lg font-bold text-slate-600">
-                Technologies used:
-              </p>
+              <p className="text-lg font-bold text-slate-600">{projectTechs}</p>
               <div className="flex flex-wrap gap-2 pb-5">
                 {project.tags.map((tag) => (
                   <div
