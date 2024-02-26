@@ -1,11 +1,9 @@
-"use client";
-
 import { Blocks, Briefcase, Contact, Rocket } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Navbar(req: any) {
-  const path = usePathname();
+  const t = useTranslations("Navbar");
 
   return (
     <div
@@ -21,7 +19,7 @@ export default function Navbar(req: any) {
           focus:underline md:gap-2`}
       >
         <Contact />
-        <p className="hidden md:block">About me</p>
+        <p className="hidden md:block">{t("about")}</p>
       </Link>
       <Link
         href="#experience"
@@ -30,7 +28,7 @@ export default function Navbar(req: any) {
         focus:underline md:gap-2`}
       >
         <Briefcase />
-        <p className="hidden md:block">Experience</p>
+        <p className="hidden md:block">{t("experience")}</p>
       </Link>
       <Link
         href="#projects"
@@ -40,7 +38,7 @@ export default function Navbar(req: any) {
       >
         {" "}
         <Blocks />
-        <p className="hidden md:block">My projects</p>
+        <p className="hidden md:block">{t("projects")}</p>
       </Link>
       <Link
         href="#social"
@@ -49,7 +47,7 @@ export default function Navbar(req: any) {
          md:gap-2`}
       >
         <Rocket />
-        <p className="hidden md:block">Social</p>
+        <p className="hidden md:block">{t("social")}</p>
       </Link>
 
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-lime-600 opacity-10" />

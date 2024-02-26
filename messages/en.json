@@ -68,6 +68,12 @@
       }
     }
   },
+  "Navbar": {
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "My projects",
+    "social": "Social"
+  },
   "Footer": {
     "text": "Designed by"
   }

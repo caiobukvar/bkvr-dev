@@ -67,6 +67,12 @@
       }
     }
   },
+  "Navbar": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "social": "Social"
+  },
   "Footer": {
     "text": "Designed by"
   }

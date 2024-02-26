@@ -3,9 +3,9 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 import { Toaster } from "sonner";
+import "../../styles/globals.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import "../../styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
