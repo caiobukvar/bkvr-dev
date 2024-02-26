@@ -27,13 +27,13 @@ export default function ProjectCard({
     <Dialog.Root>
       <Dialog.Trigger
         className="relative flex w-full flex-col gap-6 overflow-hidden rounded-md 
-          bg-slate-800 p-5 text-left outline-none
-          hover:ring-2 hover:ring-lime-600 
-          focus-visible:ring-2 focus-visible:ring-lime-600"
+          bg-slate-300 p-5 text-left shadow-md shadow-slate-600
+          outline-none hover:ring-2 
+          hover:ring-lime-600 focus-visible:ring-2 focus-visible:ring-lime-600 dark:bg-slate-800 dark:shadow-sm dark:shadow-lime-600"
       >
         <div className="flex w-full flex-col gap-2">
           <div
-            className={`max-w-32 rounded-md p-[1px] text-center text-xs text-slate-200 ${
+            className={`max-w-32 rounded-md p-[1px] text-center text-xs text-slate-200 dark:text-slate-800 ${
               project.status === "In progress" ||
               project.status === "Em progresso"
                 ? "bg-orange-600"
@@ -42,7 +42,9 @@ export default function ProjectCard({
           >
             <span>{project.status}</span>
           </div>
-          <p className="text-xl text-lime-600">{project.name}</p>
+          <p className="text-xl text-slate-800 dark:text-lime-600">
+            {project.name}
+          </p>
         </div>
 
         <img
@@ -57,20 +59,20 @@ export default function ProjectCard({
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/60" />
         <Dialog.Content
-          className="fixed inset-0 left-1/2 top-1/2 mt-12 flex h-full max-h-[70vh] w-[90vw] -translate-x-1/2
-         -translate-y-1/2 flex-col overflow-auto rounded-md bg-slate-800 outline-none md:w-full md:max-w-[640px]"
+          className="fixed inset-0 left-1/2 top-1/2 mt-12 flex h-full max-h-[70vh] w-[90vw] -translate-x-1/2 -translate-y-1/2
+         flex-col overflow-auto rounded-md bg-slate-300 outline-none md:w-full md:max-w-[640px] dark:bg-slate-800 dark:shadow-none"
         >
-          <Dialog.Close className="absolute right-0 top-0 p-1.5 text-slate-400 hover:text-slate-100">
+          <Dialog.Close className="absolute right-0 top-0 p-1.5 text-slate-800 hover:text-slate-100 dark:text-slate-400">
             <X className="size-5" />
           </Dialog.Close>
 
-          <div className="flex h-full min-h-full w-full flex-col gap-5 p-5">
+          <div className="flex h-full min-h-full w-full flex-col gap-5 p-5 text-slate-600 dark:text-slate-400">
             <div className="flex items-center gap-5 md:gap-10">
-              <p className="w-1/2 text-xl font-bold text-lime-600 md:w-auto md:text-2xl">
+              <p className="w-1/2 text-xl font-bold text-slate-800 md:w-auto md:text-2xl dark:text-lime-600">
                 {project.name}
               </p>
               <p
-                className={`rounded-r-md border-l-[2px] border-l-lime-600 p-2 text-sm text-slate-200 ${
+                className={`rounded-r-md border-l-[2px] border-l-slate-600 p-2 text-sm text-slate-200 dark:border-l-lime-600 dark:text-slate-800 dark:shadow-none ${
                   project.status === "In progress"
                     ? "bg-orange-500"
                     : "bg-green-500"
@@ -125,7 +127,9 @@ export default function ProjectCard({
             </Link>
 
             <div className="flex w-full flex-col gap-2">
-              <p className="text-lg font-bold text-slate-600">{projectTechs}</p>
+              <p className="text-lg font-bold text-slate-800 dark:text-slate-600">
+                {projectTechs}
+              </p>
               <div className="flex flex-wrap gap-2 pb-5">
                 {project.tags.map((tag) => (
                   <div

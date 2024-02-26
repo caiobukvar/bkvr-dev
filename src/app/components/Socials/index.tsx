@@ -127,9 +127,9 @@ export default function Socials({ socialsTranslations }: Props) {
   };
 
   return (
-    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-24 p-4">
+    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-24 p-4 ">
       <div className="flex flex-col gap-6">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-slate-800 dark:text-slate-400">
           <Rocket />
           <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
         </div>
@@ -138,31 +138,35 @@ export default function Socials({ socialsTranslations }: Props) {
 
         <div
           className="flex flex-col gap-6 border-l-2 border-lime-600
-        pl-6"
+        pl-6 text-slate-800 dark:text-slate-600"
         >
           <Link
             href="https://github.com/caiobukvar"
-            className="text-md flex gap-4 hover:translate-x-2
-             hover:text-lime-500 hover:delay-75 md:text-base"
+            className="text-md flex gap-4 text-slate-800
+            hover:translate-x-2 hover:text-slate-400 hover:delay-75 md:text-base dark:text-slate-400 dark:hover:text-lime-500"
             target="_blank"
           >
             <Image src={Github} height={32} width={32} alt="github" />
             <div className="flex flex-col ">
               <p>Github</p>
-              <p className="text-xs text-slate-600">/caiobukvar</p>
+              <p className="text-xs text-slate-400 dark:text-slate-600">
+                /caiobukvar
+              </p>
             </div>
           </Link>
 
           <Link
             href="https://www.linkedin.com/in/caiobukvar/"
-            className="text-md flex items-center gap-4 hover:translate-x-2 hover:text-lime-500
-             hover:delay-75 md:text-base"
+            className="text-md flex items-center gap-4 text-slate-800 hover:translate-x-2 hover:text-slate-400
+             hover:delay-75 md:text-base dark:text-slate-400 dark:hover:text-lime-400"
             target="_blank"
           >
             <Image src={Linkedin} height={32} width={32} alt="github" />
             <div className="flex flex-col ">
               <p>Linkedin</p>
-              <p className="text-xs text-slate-600">in/caiobukvar</p>
+              <p className="text-xs text-slate-400 dark:text-slate-600">
+                in/caiobukvar
+              </p>
             </div>
           </Link>
         </div>
@@ -170,7 +174,7 @@ export default function Socials({ socialsTranslations }: Props) {
 
       <form className="flex flex-col gap-6" onSubmit={(e) => onSubmit(e)}>
         <div className="flex items-center gap-2">
-          <p className="text-xl font-bold tracking-tight md:text-2xl">
+          <p className="text-xl font-bold tracking-tight text-slate-800 md:text-2xl dark:text-slate-400">
             {formTitle}
           </p>
         </div>
@@ -184,10 +188,11 @@ export default function Socials({ socialsTranslations }: Props) {
                 id="email"
                 value={values.email}
                 placeholder={formInputPlaceholder}
-                className="text-md rounded-md bg-slate-800 p-2 tracking-tight text-slate-400 outline-none
-                placeholder:text-slate-600 
-                hover:placeholder:text-lime-500
-                focus:placeholder-lime-600"
+                className="text-md rounded-md bg-slate-300 p-2 tracking-tight text-slate-600 outline-none
+                placeholder:text-slate-500 hover:placeholder:text-slate-600 focus:outline-slate-600
+                focus:placeholder:text-slate-400 dark:bg-slate-800 dark:text-slate-400
+                dark:placeholder:text-slate-600 dark:hover:placeholder:text-lime-500 dark:focus:outline-lime-600 
+                "
                 onChange={(e) => handleChange(e)}
                 onBlur={onBlur}
               />
@@ -199,10 +204,11 @@ export default function Socials({ socialsTranslations }: Props) {
               name="content"
               id="content"
               value={values.content}
-              className="text-md min-h-[200px] rounded-md bg-slate-800 p-2 tracking-tight text-slate-400 outline-none
-              placeholder:text-slate-600 
-              hover:placeholder:text-lime-500
-              focus:placeholder-lime-600"
+              className="text-md min-h-[200px] rounded-md bg-slate-300 p-2 tracking-tight text-slate-600
+              outline-none placeholder:text-slate-500 hover:placeholder:text-slate-600 focus:outline-slate-600
+              focus:placeholder:text-slate-400 dark:bg-slate-800
+              dark:text-slate-400 dark:placeholder:text-slate-600 dark:hover:placeholder:text-lime-500  dark:focus:outline-lime-600
+              "
               onChange={(e) => handleChange(e)}
               onBlur={onBlur}
             />

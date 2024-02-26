@@ -33,22 +33,21 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <section className="flex min-h-screen flex-col items-center gap-6 ">
-        <IntlBar />
+    <main className="dark:text-slate:400 text-slate-800">
+      <section className=" mt-12 flex min-h-screen flex-col items-center gap-6">
         <div className="flex flex-col items-center gap-2 text-center">
           <Image
             src={Avatar}
             alt="avatar"
             width={200}
             height={200}
-            className="rounded-md shadow-sm shadow-lime-600"
+            className="rounded-md shadow-md shadow-slate-800  dark:shadow-lime-600"
           />
 
           <div>
             <h1
               className="animate-pulse text-5xl font-bold tracking-tight
-             text-lime-500 hover:text-lime-400 "
+              text-slate-700 dark:text-lime-500"
             >{`<BKVR />`}</h1>
           </div>
         </div>
@@ -58,7 +57,7 @@ export default function Home() {
         <Link
           href="#experience"
           className="text-md relative rounded-md bg-slate-700 
-          p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
+            p-3 text-lime-600 shadow-sm shadow-lime-700 outline-none
             hover:animate-pulse hover:bg-slate-600 hover:text-lime-500 hover:ring-2
             hover:ring-lime-500 focus-visible:ring-2 focus-visible:ring-lime-600"
         >

@@ -21,11 +21,11 @@ export default function About() {
       </h1>
 
       <div className="flex flex-col gap-6 ">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-slate-800 dark:text-slate-400">
           <Contact />
           <h3 className="text-xl font-bold md:text-2xl">{t("about-me")}</h3>
         </div>
-        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-6 text-sm md:text-base">
+        <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-6 text-sm text-slate-800 md:text-base dark:text-slate-400">
           <p>{t("about-p1")}</p>
           <p>{t("about-p2")}</p>
           <p>{t("about-p3")}</p>
