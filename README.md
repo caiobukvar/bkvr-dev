@@ -20,6 +20,7 @@ This is a website that is being created as a portfolio to show a bit about mysel
 
 - **Sonner** (for toasts)
 - **Lucide** (for icons)
+- **Next-intl** (for internationalization)
 
 ## Navigation
 
@@ -28,6 +29,14 @@ This is a website that is being created as a portfolio to show a bit about mysel
 <div align='center' display='flex'>
 
 ![avatar](/public/images/v2/thumb-navbar.png)
+
+</div><br><br>
+
+> You can use the bottom right icons to change to light/dark mode and also select desired language (pt-br/en-us)
+
+<div align='center' display='flex'>
+
+![theme-changer](/public/images/v2/thumb-themes.png)
 
 </div><br><br>
 
@@ -67,7 +76,7 @@ This is a website that is being created as a portfolio to show a bit about mysel
 
 <div align='center'>
 
-![social section](/public/images/v2/thumb-socials.png)
+![social section](/public/images/v2/thumb-social.png)
 
 </div><br><br>
 
