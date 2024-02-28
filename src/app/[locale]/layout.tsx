@@ -11,7 +11,7 @@ import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
 
 export const metadata: Metadata = {
-  title: "Caio Bukvar - BKVR",
+  title: "Caio Bukvar - Developer Portfolio",
   description: "Caio Bukvar's portfolio as a software developer",
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Caio Bukvar - BKVR",
     description: "Developing solutions since 2021.",
-    images: [{ url: "/app/opengraph-image.png" }],
+    images: [{ url: "./public/opengraph-image.png" }],
   },
 };
 
