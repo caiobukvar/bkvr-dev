@@ -88,6 +88,7 @@ export default function Socials({ socialsTranslations }: Props) {
         style: {
           color: "rgb(248 113 113)",
           borderColor: "rgb(248 113 113)",
+          fontSize: "14px",
         },
         description: `${tErrorDesc}`,
       });
@@ -108,6 +109,7 @@ export default function Socials({ socialsTranslations }: Props) {
         style: {
           color: "#a3e635",
           borderColor: "#a3e635",
+          fontSize: "14px",
         },
       });
     } catch (error) {
@@ -121,6 +123,7 @@ export default function Socials({ socialsTranslations }: Props) {
         style: {
           color: "rgb(248 113 113)",
           borderColor: "rgb(248 113 113)",
+          fontSize: "14px",
         },
       });
     }
@@ -217,18 +220,17 @@ export default function Socials({ socialsTranslations }: Props) {
         <div className="flex justify-end">
           <button
             type="submit"
-            className={`text-md relative flex w-full min-w-40 items-center justify-center gap-2
-            rounded-md bg-slate-700 p-3 text-lime-600 shadow-sm 
-            shadow-lime-700 outline-none   hover:bg-slate-600
-            hover:text-lime-500 hover:underline hover:ring-2 hover:ring-lime-500 focus-visible:ring-2
-            focus-visible:ring-lime-600 md:w-auto
-            ${(!values.email || !values.content) && "disabled opacity-70 hover:text-red-400 hover:ring-red-400"}
+            className={`md:text-md relative flex w-full min-w-40 items-center justify-center gap-2 overflow-hidden
+            rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
+            hover:bg-slate-200 hover:text-slate-500 hover:underline hover:ring-2
+            hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-slate-600 md:w-auto dark:bg-slate-700 dark:text-lime-600 dark:shadow-lime-700
+            dark:hover:bg-slate-600 dark:hover:text-lime-500 dark:hover:ring-lime-500 dark:focus-visible:ring-lime-600
+            ${!values.email && !values.content && "hover:text-red-400 hover:ring-red-400"}
            `}
           >
             {formButton} <Mail />
             <div
-              className={`pointer-events-none absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b opacity-10 
-              ${!values.email || !values.content ? " from-red-300" : "from-lime-600"}`}
+              className={`pointer-events-none absolute bottom-0 left-0 right-0 h-full  bg-gradient-to-b from-lime-600  opacity-10`}
             />
           </button>
         </div>

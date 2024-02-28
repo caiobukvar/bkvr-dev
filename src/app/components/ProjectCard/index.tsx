@@ -27,9 +27,10 @@ export default function ProjectCard({
     <Dialog.Root>
       <Dialog.Trigger
         className="relative flex w-full flex-col gap-6 overflow-hidden rounded-md 
-          bg-slate-300 p-5 text-left shadow-md shadow-slate-600
-          outline-none hover:ring-2 
-          hover:ring-lime-600 focus-visible:ring-2 focus-visible:ring-lime-600 dark:bg-slate-800 dark:shadow-sm dark:shadow-lime-600"
+          bg-slate-300 p-5 text-left shadow-md shadow-slate-600 outline-none 
+          hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 
+          focus-visible:ring-lime-600 dark:bg-slate-800
+           dark:shadow-sm dark:shadow-lime-600 dark:hover:ring-lime-600"
       >
         <div className="flex w-full flex-col gap-2">
           <div
