@@ -6,7 +6,6 @@ import Experience from "../components/Experience";
 import ProjectsSummary from "../components/ProjectsSummary";
 import Socials from "../components/Socials";
 import Avatar from "/public/images/avatar2.png";
-import IntlBar from "../components/IntlBar";
 
 export default function Home() {
   const t = useTranslations("App");

@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 
 function Footer() {
-  const version = process.env.VERSION;
+  const version = process.env.NEXT_PUBLIC_VERSION;
+
   const t = useTranslations("Footer");
   return (
     <div className="flex w-full items-center justify-center gap-2 p-4 text-xs">
