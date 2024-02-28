@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Caio Bukvar - Developer Portfolio",
     description: "Developing solutions since 2021.",
-    images: [{ url: "/public/opengraph-image.png" }],
+    images: [{ url: "/app/[locale]/opengraph-image.png" }],
   },
 };
 
