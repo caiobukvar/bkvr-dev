@@ -6,6 +6,9 @@ import { Toaster } from "sonner";
 import "../../styles/globals.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { useTranslations } from "next-intl";
+import ThemeSelector from "../components/ThemeSelector";
+import IntlBar from "../components/IntlBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
@@ -31,8 +34,17 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const t = useTranslations("Navbar");
+
+  const navbarTranslations = {
+    about: `${t("about")}`,
+    experience: `${t("experience")}`,
+    projects: `${t("projects")}`,
+    social: `${t("social")}`,
+  };
+
   return (
-    <html lang={locale} className="min-h-screen bg-slate-900 text-slate-400">
+    <html lang={locale}>
       <Toaster
         richColors
         toastOptions={{
@@ -42,9 +54,14 @@ export default function RootLayout({
         }}
       />
 
-      <body className={unbounded.className}>
-        <Navbar />
+      <body
+        className={`min-h-screen bg-slate-200 text-slate-400 dark:bg-slate-900 ${unbounded.className}`}
+      >
+        <Navbar navbarTranslations={navbarTranslations} />
         {children}
+
+        <IntlBar />
+        <ThemeSelector />
         <Footer />
         <SpeedInsights />
         <Analytics />

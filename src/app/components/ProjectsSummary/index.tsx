@@ -42,7 +42,7 @@ export default function ProjectsSummary({ projectSummaryTranslations }: Props) {
   }, [projects, filter]);
 
   return (
-    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-16 p-4">
+    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-16 p-4 text-slate-800 dark:text-slate-400">
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <Blocks />
