@@ -6,6 +6,8 @@
 
 This is a website that is being created as a portfolio to show a bit about myself. It is a project that will be under development for a time, with constant updates.
 
+Current version: **_v1.11_**
+
 ## Technologies Used
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
