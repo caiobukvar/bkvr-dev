@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main className="dark:text-slate:400 text-slate-800">
       <section className=" mt-12 flex min-h-screen flex-col items-center gap-6">
-        <div className="flex flex-col items-center gap-2 text-center">
+        <div className="flex flex-col items-center gap-4 text-center">
           <Image
             src={Avatar}
             alt="avatar"
