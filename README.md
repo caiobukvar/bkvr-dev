@@ -4,7 +4,7 @@
 
 # **Meet Caio Bukvar, software developer!**
 
-This is a website is being created as a portfolio to show a bit about myself. It is a project that will be under development for a time, with constant updates.
+This is a website that is being created as a portfolio to show a bit about myself. It is a project that will be under development for a time, with constant updates.
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@ This is a website is being created as a portfolio to show a bit about myself. It
 ![Radix UI](https://img.shields.io/badge/radix%20ui-161618.svg?style=for-the-badge&logo=radix-ui&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-###  Other libs:
+### Other libs:
 
 - **Sonner** (for toasts)
 - **Lucide** (for icons)
@@ -24,42 +24,52 @@ This is a website is being created as a portfolio to show a bit about myself. It
 ## Navigation
 
 > You can use the navbar to navigate the portfolio
+
 <div align='center' display='flex'>
 
-  ![avatar](/public/images/v2/thumb-navbar.png)
+![avatar](/public/images/v2/thumb-navbar.png)
+
 </div><br><br>
 
 > The about section tells a little about me, my skills and my development carrer, also a few curiosities!
+
 <div align='center' display='flex'>
 
-  ![about](/public/images/v2/thumb-about.png)
+![about](/public/images/v2/thumb-about.png)
+
 </div><br><br>
 
 > The experience section tells a little about my professional experience, where you can find more detailed information about each job
+
 <div align='center' display='flex'>
 
-  ![experience](/public/images/v2/thumb-experience.png)
+![experience](/public/images/v2/thumb-experience.png)
+
 </div><br><br>
 
 > The projects area has interactive cards that opens a dialog to show more details about it
+
 <div align='center'>
 
-  ![projects](/public/images/v2/thumb-projects.png)
+![projects](/public/images/v2/thumb-projects.png)
+
 </div><br><br>
 
 > In each project card you can see details about it and find links for each deploy and github repository
+
 <div align='center'>
 
-  ![projects2](/public/images/v2/thumb-projects2.png)
+![projects2](/public/images/v2/thumb-projects2.png)
+
 </div><br><br>
 
 > Inside the social section, you can find links for my linkedin and github profiles and also send me an e-mail if you want to!
+
 <div align='center'>
 
-  ![social section](/public/images/v2/thumb-socials.png)
+![social section](/public/images/v2/thumb-socials.png)
+
 </div><br><br>
-
-
 
 ## Getting Started
 
@@ -84,4 +94,3 @@ cd bkvr-dev
 ```bash
 npm install
 ```
-
