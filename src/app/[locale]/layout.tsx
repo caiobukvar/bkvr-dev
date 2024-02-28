@@ -11,6 +11,7 @@ import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bkvr.dev.br"),
   title: "Caio Bukvar - Developer Portfolio",
   description: "Caio Bukvar's portfolio as a software developer",
   keywords: ["NextJS", "React", "TailwindCSS", "Javascript"],
