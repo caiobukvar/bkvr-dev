@@ -2,23 +2,19 @@
 
 import { Contact } from "lucide-react";
 import { useTranslations } from "next-intl";
+import TypedHeader from "../TypedHeader";
 
 export default function About() {
   const t = useTranslations("About");
 
+  const headerTransaltions = {
+    title1: t("title-1"),
+    title2: t("title-2"),
+  };
+
   return (
     <div className="flex w-full max-w-screen-lg animate-slide-in-left flex-col gap-16 p-4 ">
-      <h1
-        className={`text-center text-3xl italic tracking-tight text-slate-600`}
-      >
-        {t("title-1")}
-        <span
-          className={`font-bold text-lime-600 underline hover:text-lime-500 `}
-        >
-          Caio Bukvar
-        </span>
-        {t("title-2")}
-      </h1>
+      <TypedHeader headerTransaltions={headerTransaltions} />
 
       <div className="flex flex-col gap-6 ">
         <div className="flex items-center gap-2 text-slate-800 dark:text-slate-400">
