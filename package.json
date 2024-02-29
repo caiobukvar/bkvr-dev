@@ -12,13 +12,13 @@
     "@radix-ui/react-dialog": "^1.0.5",
     "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.334.0",
     "next": "14.1.0",
     "next-intl": "^3.9.1",
     "nodemailer": "^6.9.9",
     "react": "^18",
     "react-dom": "^18",
-    "react-simple-typewriter": "^5.0.1",
     "sonner": "^1.4.0"
   },
   "devDependencies": {
