@@ -23,10 +23,11 @@ Current version: **_v1.11_**
 - **Sonner** (for toasts)
 - **Lucide** (for icons)
 - **Next-intl** (for internationalization)
+- **GSAP** (for animations)
 
 ## Navigation
 
-> You can use the navbar to navigate the portfolio
+> **You can use the navbar to navigate the portfolio**
 
 <div align='center' display='flex'>
 
@@ -34,7 +35,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> You can use the bottom right icons to change to light/dark mode and also select desired language (pt-br/en-us)
+> **You can use the bottom right icons to change to light/dark mode and also select desired language (pt-br/en-us)**
 
 <div align='center' display='flex'>
 
@@ -42,7 +43,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> The about section tells a little about me, my skills and my development carrer, also a few curiosities!
+> **The about section tells a little about me, my skills and my development carrer, also a few curiosities!**
 
 <div align='center' display='flex'>
 
@@ -50,7 +51,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> The experience section tells a little about my professional experience, where you can find more detailed information about each job
+> **The experience section tells a little about my professional experience, where you can find more detailed information about each job**
 
 <div align='center' display='flex'>
 
@@ -58,7 +59,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> The projects area has interactive cards that opens a dialog to show more details about it
+> **The projects area has interactive cards that opens a dialog to show more details about it**
 
 <div align='center'>
 
@@ -66,7 +67,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> In each project card you can see details about it and find links for each deploy and github repository
+> **In each project card you can see details about it and find links for each deploy and github repository**
 
 <div align='center'>
 
@@ -74,7 +75,7 @@ Current version: **_v1.11_**
 
 </div><br><br>
 
-> Inside the social section, you can find links for my linkedin and github profiles and also send me an e-mail if you want to!
+> **Inside the social section, you can find links for my linkedin and github profiles and also send me an e-mail if you want to!**
 
 <div align='center'>
 
