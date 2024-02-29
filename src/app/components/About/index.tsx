@@ -13,7 +13,7 @@ export default function About() {
   };
 
   return (
-    <div className="flex w-full max-w-screen-lg animate-slide-in-left flex-col gap-16 p-4 ">
+    <div className="flex w-full max-w-screen-lg flex-col gap-16 p-4 ">
       <TypedHeader headerTransaltions={headerTransaltions} />
 
       <div className="flex flex-col gap-6 ">
