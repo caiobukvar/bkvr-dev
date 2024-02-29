@@ -37,7 +37,7 @@ function TypedHeader({ headerTransaltions }) {
     <div className="flex w-full max-w-screen-lg">
       <h2 className="text-3xl italic text-slate-600">
         <span className="title1 "></span>
-        <span className="dev-name text-lime-600 underline"></span>
+        <span className="dev-name font-bold text-lime-600 underline"></span>
         <span className="title2 "></span>
       </h2>
     </div>
