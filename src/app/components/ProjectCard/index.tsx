@@ -111,7 +111,7 @@ export default function ProjectCard({
               )}
             </div>
 
-            <p className="text-md">{project.description}</p>
+            <p className="md:text-md text-sm">{project.description}</p>
 
             <Link
               href={project.url ? project.url : project.githubURL}

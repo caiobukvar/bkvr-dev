@@ -14,7 +14,8 @@
       "Sonner",
       "Nodemailer",
       "Lucide",
-      "next-intl"
+      "next-intl",
+      "GSAP"
     ],
     "status": "Em progresso"
   },
