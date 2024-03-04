@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import ProjectsSummary from "../components/ProjectsSummary";
 import Socials from "../components/Socials";
 import Avatar from "/public/images/avatar2.png";
+import { ChevronDown } from "lucide-react";
 
 export default function Home() {
   const t = useTranslations("App");
@@ -33,7 +34,7 @@ export default function Home() {
 
   return (
     <main className="dark:text-slate:400 text-slate-800">
-      <section className=" mt-12 flex min-h-screen flex-col items-center gap-6">
+      <section className="mt-12 flex flex-col items-center gap-6 ">
         <div className="flex flex-col items-center gap-4 text-center">
           <Image
             src={Avatar}
@@ -55,44 +56,40 @@ export default function Home() {
 
         <Link
           href="#experience"
-          className="md:text-md relative rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
+          className="md:text-md relative flex items-center justify-center gap-1 rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
           hover:bg-slate-200 hover:text-slate-500 hover:ring-2 hover:ring-slate-500 
             focus-visible:ring-2 focus-visible:ring-lime-600
           dark:bg-slate-700 dark:text-lime-600 dark:shadow-lime-700 dark:hover:bg-slate-600 dark:hover:text-lime-500 dark:hover:ring-lime-500"
         >
+          <ChevronDown />
           {t("button-1")}
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full rounded-md bg-gradient-to-b from-lime-600 opacity-10" />
         </Link>
       </section>
 
-      <section
-        className="flex min-h-screen flex-col items-center gap-6"
-        id="experience"
-      >
+      <section className="flex flex-col items-center gap-6" id="experience">
         <Experience />
 
         <Link
           href="#projects"
-          className="md:text-md relative rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
+          className="md:text-md relative flex items-center justify-center gap-1 rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
         hover:bg-slate-200 hover:text-slate-500 hover:ring-2 hover:ring-slate-500 
           focus-visible:ring-2 focus-visible:ring-lime-600
         dark:bg-slate-700 dark:text-lime-600 dark:shadow-lime-700 dark:hover:bg-slate-600 dark:hover:text-lime-500 dark:hover:ring-lime-500"
         >
+          <ChevronDown />
           {t("button-2")}
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full rounded-md bg-gradient-to-b from-lime-600 opacity-10" />
         </Link>
       </section>
 
-      <section
-        className="flex min-h-screen flex-col items-center"
-        id="projects"
-      >
+      <section className="flex flex-col items-center gap-8" id="projects">
         <ProjectsSummary
           projectSummaryTranslations={projectSummaryTranslations}
         />
       </section>
 
-      <section className="flex min-h-screen  flex-col items-center" id="social">
+      <section className="flex flex-col items-center" id="contact">
         <Socials socialsTranslations={socialsTranslations} />
       </section>
     </main>
