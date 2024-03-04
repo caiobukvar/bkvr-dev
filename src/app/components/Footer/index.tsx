@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 function Footer() {
-  const version = 1.11;
+  const version = 1.12;
 
   const t = useTranslations("Footer");
   return (
