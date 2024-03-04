@@ -2,7 +2,8 @@
   "App": {
     "title": "Hello world!",
     "button-1": "Experience",
-    "button-2": "Projects"
+    "button-2": "Projects",
+    "button-3": "Contact"
   },
   "About": {
     "title-1": "Meet ",
@@ -72,7 +73,7 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
-    "social": "Social"
+    "contact": "Contact"
   },
   "Footer": {
     "text": "Designed by"

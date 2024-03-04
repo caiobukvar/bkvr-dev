@@ -40,7 +40,7 @@ export default function RootLayout({
     about: `${t("about")}`,
     experience: `${t("experience")}`,
     projects: `${t("projects")}`,
-    social: `${t("social")}`,
+    contact: `${t("contact")}`,
   };
 
   return (

@@ -130,7 +130,7 @@ export default function Socials({ socialsTranslations }: Props) {
   };
 
   return (
-    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-24 p-4 ">
+    <div className="mt-24 flex w-full max-w-screen-lg flex-col gap-24 px-12">
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2 text-slate-800 dark:text-slate-400">
           <Rocket />

@@ -1,7 +1,8 @@
 {
   "App": {
     "button-1": "Experiência",
-    "button-2": "Projetos"
+    "button-2": "Projetos",
+    "button-3": "Contato"
   },
   "About": {
     "title-1": "Conheça ",
@@ -71,7 +72,7 @@
     "about": "Sobre",
     "experience": "Experiência",
     "projects": "Projetos",
-    "social": "Social"
+    "contact": "Contato"
   },
   "Footer": {
     "text": "Designed by"
