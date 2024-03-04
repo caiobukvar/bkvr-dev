@@ -53,8 +53,8 @@ export default function Navbar({ navbarTranslations }: Props) {
       <Link
         href="/#contact"
         className={`flex items-center gap-10 rounded-sm p-2 outline-none hover:text-slate-800 hover:underline
-        focus:underline md:gap-2
-         dark:hover:text-lime-500`}
+        focus:text-slate-400 focus:underline
+        md:gap-2 dark:hover:text-lime-500`}
       >
         <Rocket />
         <p className="hidden md:block">{contact}</p>
