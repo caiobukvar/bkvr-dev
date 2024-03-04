@@ -32,7 +32,7 @@ export default function Navbar({ navbarTranslations }: Props) {
         <p className="hidden md:block">{about}</p>
       </Link>
       <Link
-        href="#experience"
+        href="/#experience"
         className={`flex items-center gap-10 rounded-sm p-2 outline-none hover:text-slate-800 hover:underline
         focus:text-slate-400 focus:underline
         md:gap-2 dark:hover:text-lime-500`}
@@ -41,7 +41,7 @@ export default function Navbar({ navbarTranslations }: Props) {
         <p className="hidden md:block">{experience}</p>
       </Link>
       <Link
-        href="#projects"
+        href="/#projects"
         className={`flex items-center gap-10 rounded-sm p-2 outline-none hover:text-slate-800 hover:underline
         focus:text-slate-400 focus:underline
         md:gap-2 dark:hover:text-lime-500`}
@@ -51,7 +51,7 @@ export default function Navbar({ navbarTranslations }: Props) {
         <p className="hidden md:block">{projects}</p>
       </Link>
       <Link
-        href="#contact"
+        href="/#contact"
         className={`flex items-center gap-10 rounded-sm p-2 outline-none hover:text-slate-800 hover:underline
         focus:underline md:gap-2
          dark:hover:text-lime-500`}

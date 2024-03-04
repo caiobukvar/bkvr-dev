@@ -55,7 +55,7 @@ export default function Home() {
         <About />
 
         <Link
-          href="#experience"
+          href="/#experience"
           className="md:text-md relative flex items-center justify-center gap-1 rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
           hover:bg-slate-200 hover:text-slate-500 hover:ring-2 hover:ring-slate-500 
             focus-visible:ring-2 focus-visible:ring-lime-600
@@ -71,7 +71,7 @@ export default function Home() {
         <Experience />
 
         <Link
-          href="#projects"
+          href="/#projects"
           className="md:text-md relative flex items-center justify-center gap-1 rounded-md bg-slate-300 p-3 text-sm text-slate-600 shadow-sm shadow-slate-700 outline-none 
         hover:bg-slate-200 hover:text-slate-500 hover:ring-2 hover:ring-slate-500 
           focus-visible:ring-2 focus-visible:ring-lime-600
