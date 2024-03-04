@@ -26,7 +26,7 @@ export default function ProjectCard({
   return (
     <Dialog.Root>
       <Dialog.Trigger
-        className="relative flex w-full flex-col gap-6 overflow-hidden rounded-md 
+        className="relative flex w-full flex-col justify-between gap-6 overflow-hidden rounded-md 
           bg-slate-300 p-5 text-left shadow-md shadow-slate-600 outline-none 
           hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 
           focus-visible:ring-lime-600 dark:bg-slate-800
@@ -51,7 +51,7 @@ export default function ProjectCard({
         <img
           src={project.thumbnail}
           alt="thumb"
-          className="h-[150px] w-full self-center rounded-sm"
+          className="h-[142px] w-full self-center rounded-sm"
         />
 
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-lime-600 opacity-10" />
