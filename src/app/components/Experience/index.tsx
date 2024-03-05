@@ -46,7 +46,7 @@ export default function Experience() {
             <h2 className="font-bold">{t("frontend-dev")} @ Unmaze</h2>
 
             <p className="text-xs">
-              {t("march")} 2022 - {t("august")} 2023
+              {t("march")} 2022 - {t("august")}
             </p>
           </div>
 
