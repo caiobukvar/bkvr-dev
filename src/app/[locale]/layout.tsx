@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import { useTranslations } from "next-intl";
 import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Footer />
         <SpeedInsights />
         <Analytics />
+        <GoogleAnalytics gaId="G-W78J83CZK3" />
       </body>
     </html>
   );
