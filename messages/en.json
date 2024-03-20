@@ -18,23 +18,36 @@
     "title": "Professional experience",
     "frontend-dev": "Frontend Developer",
     "march": "Mar.",
-    "august": "currently",
+    "august": "Aug.",
     "november": "Nov.",
     "job2": {
-      "description": "I was responsible for developing unmaze's platform and maintaining it, focused on React. I've contributed with several crucial insights, which lead us to:",
       "list": {
-        "i1": "revenue increased 40%;",
-        "i2": "total user amount increased by 60%;",
-        "i3": "number of active users increased by 50%;",
-        "i4": "B2B clients raised from 0 to 8 (last trimester 2022);",
-        "i5": "NPS kept above 85 throughout 2022."
+        "i1": "Contributed as a frontend developer on the team responsible for developing a language learning platform, taking responsibility for implementing new features, creating layouts based on designs in Figma, and continuously maintaining the platform.",
+        "i2": "Developed features including document management, teacher and student management, scheduling, as well as creating pop-ups, modals, banners, and other solutions for marketing promotions.",
+        "i3": "Collaborated with two other developers who were responsible for the backend and frontend support.",
+        "i4": "Actively participated in agile methodologies (Scrum), including sprint planning, code reviews, and pair programming.",
+        "i5": "Developed solid skills in HTML, CSS, JavaScript, and modern frameworks, aiming for the effectiveness and evolution of the platform."
       }
     },
     "job1": {
-      "description": "I was responsible for creating layouts based on figma designs, focused on React.",
       "list": {
-        "i1": "major increase of my coding skills along with a senior dev reviewing my code;",
-        "i2": "major increase on communication skills and introduction to dailies, weeklys, reports, 1 on 1's;"
+        "i1": "Development and integration of layouts based on designs in Figma for a language learning platform.",
+        "i2": "The routine consisted of dailies and weeklies for task alignment, pair programming, and code review, guided by a senior developer. Every month, we held 1-on-1 meetings to discuss learnings and tips for improving soft skills."
+      }
+    }
+  },
+  "Voluntary": {
+    "title": "Voluntary Experience",
+    "dev": "Software Developer",
+    "march": "Mar.",
+    "currently": "currently",
+    "job1": {
+      "list": {
+        "i1": "👨‍💻 Mentorship: Guiding junior developers, teaching essential programming skills such as Next.js, TypeScript, Axios, React Query, and Node.js. Practiced pair programming to promote collaboration and mutual learning, emphasizing a mobile-first development approach.",
+        "i2": "🔧 Project Management: Project management following agile methodologies and SCRUM. Task management through GitHub, with daily meetings to ensure project progress and alignment with objectives.",
+        "i3": "🎨 UI Design: Translating designs from Figma into responsive interfaces using React, Next.js, Ant Design and Tailwind CSS, focusing on mobile-first design principles. Emphasizing user experience to prioritize usability and accessibility across all devices.",
+        "i4": "✨ Code Excellence: Utilizing clean, efficient and sustainable code standards. Collaborating with frontend developers through code reviews to share knowledge and ensure code quality, with special attention to performance optimization on mobile devices.",
+        "i5": "🌐 Deployment and Infrastructure: Maintaining CI/CD pipelines using GitHub Actions for secure and scalable solutions. Integrating OAuth for user authentication and authorization, ensuring data security and user privacy on mobile platforms."
       }
     }
   },

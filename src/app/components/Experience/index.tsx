@@ -11,27 +11,21 @@ export default function Experience() {
     "ChakraUI",
     "Javascript",
     "Figma",
-    "Slack",
-    "Trello",
-    "Jira",
-    "Clickup",
     "Websocket",
     "Postman",
     "PostgreSQL",
+    "SASS",
   ];
   const job2Tags = [
     "React",
     "ChakraUI",
     "Docker",
     "Javascript",
-    "Figma",
-    "Slack",
-    "Trello",
-    "Jira",
-    "Clickup",
     "Websocket",
     "Postman",
     "PostgreSQL",
+    "SASS",
+    "CI/CD",
   ];
 
   return (
@@ -46,12 +40,11 @@ export default function Experience() {
             <h2 className="font-bold">{t("frontend-dev")} @ Unmaze</h2>
 
             <p className="text-xs">
-              {t("march")} 2022 - {t("august")}
+              {t("march")} 2022 - {t("august")} 2023
             </p>
           </div>
 
-          <p>{t("job2.description")}</p>
-          <ul className="ml-6 list-disc text-wrap text-slate-800 dark:text-slate-400">
+          <ul className="ml-6 flex list-disc flex-col gap-2 text-wrap text-slate-800 dark:text-slate-400">
             {job2ListKeys.map((key) => (
               <li key={key}>{t(`job2.list.${key}`)}</li>
             ))}
@@ -76,8 +69,7 @@ export default function Experience() {
               {t("november")} 2021 - {t("march")} 2022
             </p>
           </div>
-          <p>{t("job1.description")}</p>
-          <ul className="ml-6 list-disc text-wrap text-slate-800 dark:text-slate-400">
+          <ul className="ml-6 flex list-disc flex-col gap-2 text-wrap text-slate-800 dark:text-slate-400">
             {job1ListKeys.map((key) => (
               <li key={key}>{t(`job1.list.${key}`)}</li>
             ))}

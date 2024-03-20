@@ -7,6 +7,7 @@ import ProjectsSummary from "../components/ProjectsSummary";
 import Socials from "../components/Socials";
 import Avatar from "/public/images/avatar2.png";
 import { ChevronDown } from "lucide-react";
+import VoluntaryWork from "../components/VoluntaryWork";
 
 export default function Home() {
   const t = useTranslations("App");
@@ -69,6 +70,8 @@ export default function Home() {
 
       <section className="flex flex-col items-center gap-6" id="experience">
         <Experience />
+
+        <VoluntaryWork />
 
         <Link
           href="/#projects"

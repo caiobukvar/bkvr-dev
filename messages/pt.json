@@ -17,23 +17,36 @@
     "title": "Experiência profissional",
     "frontend-dev": "Desenvolvedor Frontend",
     "march": "Mar.",
-    "august": "atualmente",
+    "august": "Ago.",
     "november": "Nov.",
     "job2": {
-      "description": "Responsável pela criação e manutenção do frontend da plataforma Unmaze, com foco em React. Contribui com vários insights cruciais para algumas features na plataforma, que nos proporcionou:",
       "list": {
-        "i1": "aumento da receita com a nova plataforma em 40%;",
-        "i2": "aumento de usuários na plataforma de mais de 60%;",
-        "i3": "número total de usários ativos na plataforma aumentou em mais de 50%;",
-        "i4": "número de clientes B2B foi de 0 a 8 (ultimo trimestre 2022);",
-        "i5": "NPS manteve-se em 85+ ao longo do ano de 2022."
+        "i1": "Contribuiu como desenvolvedor frontend na equipe encarregada do desenvolvimento de uma plataforma de ensino de idiomas, assumindo a responsabilidade pela implementação de novas features, criação de layouts a partir de designs no Figma e manutenção contínua da plataforma. ",
+        "i2": "As features desenvolvidas abrangiam o gerenciamento de documentos, professores, alunos, horários, bem como a criação de pop-ups, modais, banners e outras soluções para promoções de marketing.",
+        "i3": "Colaboração em equipe com mais dois desenvolvedores, que eram responsáveis pelo backend e suporte ao frontend.",
+        "i4": "Participação ativa em metodologias ágeis (Scrum), incluindo planejamento de sprints, revisões de código e programação em pares.",
+        "i5": "Desenvolvimento de habilidades sólidas em HTML, CSS, JavaScript e frameworks modernos, visando a eficácia e a evolução da plataforma."
       }
     },
     "job1": {
-      "description": "Responsável pela criação de designs baseados no figma, com foco em React.",
       "list": {
-        "i1": "desenvolvimento de minhas habilidades técnicas com o acompanhamento de desenvolvedores sênior, com revisões de código",
-        "i2": "melhora nas habilidades de comunicação e introdução a reuniões diárias, semanais e mensais, 1 a 1."
+        "i1": "Desenvolvimento e integração de layouts a partir de designs no figma para uma plataforma para aulas de idiomas.",
+        "i2": "A rotina consistia em dailies e weeklies para alinhamento de tarefas, pair programming e code review, orientado por um desenvolvedor sênior. Todo mês realizávamos reuniões 1-on-1 para discussão sobre aprendizados e dicas para melhoria de softskill."
+      }
+    }
+  },
+  "Voluntary": {
+    "title": "Experiência Voluntária",
+    "dev": "Desenvolvedor de software",
+    "march": "Mar.",
+    "currently": "atualmente",
+    "job1": {
+      "list": {
+        "i1": "👨‍💻 Mentoria: Orientação a desenvolvedores juniores, ensinando habilidades de programação essenciais como Next.js, Typescript, Axios, React Query e Node.js. Praticou programação em duplas para promover colaboração e aprendizado mútuo, enfatizando uma abordagem de desenvolvimento focada em dispositivos móveis.",
+        "i2": "🔧 Gestão de Projetos: Gerenciamento de projeto seguindo metodologias ágeis e SCRUM. Gerenciamento de tarefas através do GitHub, com reuniões diárias para garantir o progresso do projeto e alinhamento com os objetivos.",
+        "i3": "🎨 Design de UI: Tradução de designs do Figma em interfaces responsivas usando React, Next.js, Ant Design e Tailwind CSS, com foco nos princípios de design mobile-first. Ênfase na experiência do usuário para priorizar usabilidade e acessibilidade em todos os dispositivos.",
+        "i4": "✨ Excelência de Código: Utilização de padrões de código limpo, eficiente e sustentável. Colaboração com desenvolvedores frontend através de revisões de código para compartilhar conhecimento e garantir qualidade de código, com atenção especial para otimização de desempenho em dispositivos móveis.",
+        "i5": "🌐 Implantação e Infraestrutura: Manutenção de pipelines de CI/CD usando GitHub Actions para soluções seguras e escaláveis. Integração OAuth para autenticação e autorização de usuários, garantindo segurança de dados e privacidade do usuário em plataformas móveis."
       }
     }
   },
