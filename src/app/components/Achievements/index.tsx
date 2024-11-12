@@ -24,7 +24,19 @@ const achievements = [
   },
 ];
 
-export default function Achievements() {
+interface Achievements {
+  title: string;
+  itemTitle: string;
+  itemDescription: string;
+}
+
+interface Props {
+  achievementsTranslations: Achievements;
+}
+
+export default function Achievements({ achievementsTranslations }: Props) {
+  const { title, itemTitle, itemDescription } = achievementsTranslations;
+
   return (
     <div className="flex w-full max-w-screen-lg flex-col gap-16 px-12">
       <div className="flex flex-col gap-6 ">
@@ -46,8 +58,8 @@ export default function Achievements() {
            dark:shadow-sm dark:shadow-lime-600"
             >
               <div className="flex flex-col gap-0 self-start">
-                <h2 className="bold"> Hackaton UniAnchieta 2024</h2>
-                <p className="text-xs text-slate-600">2º Lugar</p>
+                <h2 className="bold">{itemTitle}</h2>
+                <p className="text-xs text-slate-600">{itemDescription}</p>
               </div>
               <div className="flex flex-col gap-4 md:flex-row">
                 {achievement.images.map((image) => (

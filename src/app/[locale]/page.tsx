@@ -14,6 +14,13 @@ export default function Home() {
   const t = useTranslations("App");
   const p = useTranslations("Projects");
   const s = useTranslations("Socials");
+  const ach = useTranslations("Achievements");
+
+  const achievementsTranslations = {
+    title: `${ach("title")}`,
+    itemTitle: `${ach("items.title")}`,
+    itemDescription: `${ach("items.description")}`,
+  };
 
   const projectSummaryTranslations = {
     title: `${p("title")}`,
@@ -33,6 +40,8 @@ export default function Home() {
     tErrorDesc: `${s("toasts.error.content.description")}`,
     tFailMsg: `${s("toasts.error.content.description")}`,
   };
+
+  const achievementTranslations = {};
 
   return (
     <main className="dark:text-slate:400 text-slate-800">
@@ -56,7 +65,7 @@ export default function Home() {
 
         <About />
 
-        <Achievements />
+        <Achievements achievementsTranslations={achievementsTranslations} />
 
         <Link
           href="/#experience"

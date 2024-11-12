@@ -14,6 +14,13 @@
     "about-p3": "Nowadays, I'm commited to improve my skills as a developer while I search for a new opening.",
     "about-p4": "I'm always aiming to deliver the best possible solution."
   },
+  "Achievements": {
+    "title": "Achievements",
+    "items": {
+      "title": "Hackaton UniAnchieta 2024",
+      "description": "2nd place"
+    }
+  },
   "Experience": {
     "title": "Professional experience",
     "frontend-dev": "Frontend Developer",
