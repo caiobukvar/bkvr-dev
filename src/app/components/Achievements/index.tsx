@@ -42,7 +42,7 @@ export default function Achievements({ achievementsTranslations }: Props) {
       <div className="flex flex-col gap-6 ">
         <div className="flex items-center gap-2 text-slate-800 dark:text-slate-400">
           <Trophy />
-          <h3 className="text-xl font-bold md:text-2xl">Conquistas</h3>
+          <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
         </div>
 
         {achievements.map((achievement) => (
