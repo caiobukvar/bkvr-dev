@@ -8,7 +8,7 @@ import Socials from "../components/Socials";
 import Avatar from "/public/images/avatar2.png";
 import { ChevronDown } from "lucide-react";
 import VoluntaryWork from "../components/VoluntaryWork";
-import Achievements from "../components/Achievments";
+import Achievements from "../components/Achievements";
 
 export default function Home() {
   const t = useTranslations("App");
