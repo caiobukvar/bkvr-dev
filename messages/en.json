@@ -24,9 +24,18 @@
   "Experience": {
     "title": "Professional experience",
     "frontend-dev": "Frontend Developer",
+    "system-dev-intern": "System Developer Intern",
     "march": "Mar.",
+    "april": "Apr.",
+    "july": "Jul.",
     "august": "Aug.",
     "november": "Nov.",
+    "job3": {
+      "list": {
+        "i1": "Developed system features and provided maintenance.",
+        "i2": "Applied general knowledge and learned more about system related Support/Development."
+      }
+    },
     "job2": {
       "list": {
         "i1": "Contributed as a frontend developer on the team responsible for developing a language learning platform, taking responsibility for implementing new features, creating layouts based on designs in Figma, and continuously maintaining the platform.",

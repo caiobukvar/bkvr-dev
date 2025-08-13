@@ -23,9 +23,18 @@
   "Experience": {
     "title": "Experiência profissional",
     "frontend-dev": "Desenvolvedor Frontend",
+    "system-dev-intern": "Estagiário Desenvolvedor de Sistemas",
     "march": "Mar.",
+    "april": "Abr.",
+    "july": "Jul.",
     "august": "Ago.",
     "november": "Nov.",
+    "job3": {
+      "list": {
+        "i1": "Desenvolvimento de features e manutenção do sistema.",
+        "i2": "Aplicação de conhecimentos gerais e aprendizagem sobre o suporte e desenvolvimento de sistemas."
+      }
+    },
     "job2": {
       "list": {
         "i1": "Contribuiu como desenvolvedor frontend na equipe encarregada do desenvolvimento de uma plataforma de ensino de idiomas, assumindo a responsabilidade pela implementação de novas features, criação de layouts a partir de designs no Figma e manutenção contínua da plataforma. ",
