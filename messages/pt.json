@@ -54,8 +54,8 @@
   "Voluntary": {
     "title": "Experiência Voluntária",
     "dev": "Desenvolvedor de software",
+    "jan": "Jan.",
     "march": "Mar.",
-    "currently": "atualmente",
     "job1": {
       "list": {
         "i1": "👨‍💻 Mentoria: Orientação a desenvolvedores juniores, ensinando habilidades de programação essenciais como Next.js, Typescript, Axios, React Query e Node.js. Praticou programação em duplas para promover colaboração e aprendizado mútuo, enfatizando uma abordagem de desenvolvimento focada em dispositivos móveis.",

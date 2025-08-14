@@ -55,8 +55,8 @@
   "Voluntary": {
     "title": "Voluntary Experience",
     "dev": "Software Developer",
+    "jan": "Jan.",
     "march": "Mar.",
-    "currently": "currently",
     "job1": {
       "list": {
         "i1": "👨‍💻 Mentorship: Guiding junior developers, teaching essential programming skills such as Next.js, TypeScript, Axios, React Query, and Node.js. Practiced pair programming to promote collaboration and mutual learning, emphasizing a mobile-first development approach.",
