@@ -28,7 +28,7 @@ export default function VoluntaryWork() {
             <h2 className="font-bold">{t("dev")} @ College Hack</h2>
 
             <p className="text-xs">
-              {t("march")} 2023 - {t("jan")}
+              {t("march")} 2023 - {t("jan")} 2024
             </p>
           </div>
 
