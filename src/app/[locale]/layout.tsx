@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
@@ -33,9 +32,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   // Load translations from Next Intl (locale is automatically detected)
   const t = await getTranslations("Navbar");

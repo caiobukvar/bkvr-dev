@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^14.1.2",
-    "@radix-ui/react-dialog": "^1.0.5",
+    "@next/third-parties": "^15.5.2",
+    "@radix-ui/react-dialog": "^1.1.15",
     "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
     "gsap": "^3.12.5",
-    "lucide-react": "^0.334.0",
+    "lucide-react": "^0.542.0",
     "next": "^15.5.2",
     "next-intl": "^3.9.1",
     "nodemailer": "^6.9.9",
