@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
@@ -68,7 +67,6 @@ export default async function RootLayout({
         <Footer />
         <SpeedInsights />
         <Analytics />
-        <GoogleAnalytics gaId="G-W78J83CZK3" />
       </body>
     </html>
   );
