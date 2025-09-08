@@ -32,9 +32,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   // Load translations from Next Intl (locale is automatically detected)
   const t = await getTranslations("Navbar");
