@@ -6,7 +6,8 @@ const achievements = [
   {
     id: 1,
     name: "Hackaton UniAnchieta 2024",
-    description: "2º Lugar",
+    description:
+      "2º Lugar - Criado um MVP de uma plataforma para onboarding integrado de novos colaboradores, centralizando documentos, itens e políticas em um só local, utilizando um chat AI para auxiliar o colaborador no  uso da plataforma.",
     images: [
       {
         id: 1,
@@ -26,6 +27,7 @@ const achievements = [
 
 interface Achievements {
   title: string;
+  placement: string;
   itemTitle: string;
   itemDescription: string;
 }
@@ -35,7 +37,8 @@ interface Props {
 }
 
 export default function Achievements({ achievementsTranslations }: Props) {
-  const { title, itemTitle, itemDescription } = achievementsTranslations;
+  const { title, placement, itemTitle, itemDescription } =
+    achievementsTranslations;
 
   return (
     <div className="flex w-full max-w-screen-lg flex-col gap-16 px-12">
@@ -57,9 +60,11 @@ export default function Achievements({ achievementsTranslations }: Props) {
           md:items-start dark:bg-slate-800
            dark:shadow-sm dark:shadow-lime-600"
             >
-              <div className="flex flex-col gap-0 self-start">
-                <h2 className="bold">{itemTitle}</h2>
-                <p className="text-xs text-slate-600">{itemDescription}</p>
+              <div className="flex flex-col gap-1 self-start">
+                <h2 className="font-bold">
+                  {itemTitle} - {placement}
+                </h2>
+                <p className="text-sm text-slate-600">{itemDescription}</p>
               </div>
               <div className="flex flex-col gap-4 md:flex-row">
                 {achievement.images.map((image) => (

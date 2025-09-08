@@ -19,6 +19,7 @@ export default function Home() {
   const achievementsTranslations = {
     title: `${ach("title")}`,
     itemTitle: `${ach("items.title")}`,
+    placement: `${ach("items.placement")}`,
     itemDescription: `${ach("items.description")}`,
   };
 

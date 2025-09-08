@@ -17,7 +17,8 @@
     "title": "Conquistas",
     "items": {
       "title": "Hackaton UniAnchieta 2024",
-      "description": "2º Lugar"
+      "placement": "2º Lugar",
+      "description": "Criado um MVP de uma plataforma para onboarding integrado de novos colaboradores, centralizando documentos, itens e políticas em um só local, utilizando um chat AI para auxiliar o colaborador no  uso da plataforma."
     }
   },
   "Experience": {
