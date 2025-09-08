@@ -68,7 +68,6 @@ export default async function RootLayout({
         <Footer />
         <SpeedInsights />
         <Analytics />
-        <GoogleAnalytics gaId="G-W78J83CZK3" />
       </body>
     </html>
   );
