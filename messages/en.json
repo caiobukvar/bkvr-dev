@@ -18,7 +18,8 @@
     "title": "Achievements",
     "items": {
       "title": "Hackaton UniAnchieta 2024",
-      "description": "2nd place"
+      "placement": "2nd place",
+      "description": "An MVP of a platform for integrated onboarding of new employees was created, centralizing documents, items, and policies in a single location, using an AI chat to assist employees in navigating and using the platform."
     }
   },
   "Experience": {
@@ -32,23 +33,25 @@
     "november": "Nov.",
     "job3": {
       "list": {
-        "i1": "Developed features and provided maintenance to existing modules on a legacy quality management platform.",
-        "i2": "Applied general knowledge and learned more about platform related Development/Support skills, modules and quality processes."
+        "i1": "Support and Development Activities: started in the support area to gain knowledge of internal workflows, modules, and quality processes, later transitioning to development tasks within the system’s microservices.",
+        "i2": "Maintenance and Feature Implementation: worked on minor real-world tasks such as bug fixes, translation adjustments, and the addition or modification of functionalities in existing services, always under the guidance of a senior developer.",
+        "i3": "Microservices Architecture: contributed to a system built with multiple microservices, leveraging Java 8, Spring Boot, JPA, Eureka, and API Gateway, deployed on JBoss, and integrated with SQL Server and Oracle databases."
       }
     },
     "job2": {
       "list": {
-        "i1": "Contributed as a frontend developer on the team responsible for developing a language learning platform, taking responsibility for implementing new features, creating layouts based on designs in Figma, and continuously maintaining the platform.",
-        "i2": "Developed features including document management, teacher and student management, scheduling, as well as creating pop-ups, modals, banners, and other solutions for marketing promotions.",
-        "i3": "Collaborated with two other developers who were responsible for the backend and frontend support.",
-        "i4": "Actively participated in agile methodologies (Scrum), including sprint planning, code reviews, and pair programming.",
-        "i5": "Developed solid skills in HTML, CSS, JavaScript, and modern frameworks, aiming for the effectiveness and evolution of the platform."
+        "i1": "Feature Development & Maintenance: implemented new features and ensured continuous maintenance of the platform, working on functionalities such as document, teacher, student, and schedule management, as well as UI components including pop-ups, modals, banners, and marketing promotion tools.",
+        "i2": "Design to Code Implementation: translated Figma designs into responsive layouts, ensuring consistency and usability across the platform.",
+        "i3": "Team Collaboration: worked closely with two other developers (backend and frontend support), actively participating in agile ceremonies (Scrum), sprint planning, code reviews, and pair programming sessions.",
+        "i4": "Technical Skills: strengthened expertise in HTML, CSS, JavaScript, and modern frontend frameworks, contributing to the platform's growth and user experience improvements."
       }
     },
     "job1": {
       "list": {
-        "i1": "Development and integration of layouts based on designs in Figma for a language learning platform.",
-        "i2": "The routine consisted of dailies and weeklies for task alignment, pair programming, and code review, guided by a senior developer. Every month, we held 1-on-1 meetings to discuss learnings and tips for improving soft skills."
+        "i1": "Hands-on Experience in a Real Project: took part in a development residency at Cubos Academy, working as a frontend developer on Unmaze, a language learning platform.",
+        "i2": "Feature Implementation & UI Development: contributed to the implementation of new features and developed responsive interfaces from Figma prototypes, ensuring usability and design consistency.",
+        "i3": "Team Collaboration: collaborated with frontend and backend teammates, applying agile methodologies (Scrum) through maintenance tasks, code reviews, and continuous delivery.",
+        "i4": "Foundation for Professional Experience: the work carried out in this project became the foundation and was later continued professionally, evolving into the role described in the following work experience."
       }
     }
   },
@@ -59,11 +62,10 @@
     "march": "Mar.",
     "job1": {
       "list": {
-        "i1": "👨‍💻 Mentorship: Guiding junior developers, teaching essential programming skills such as Next.js, TypeScript, Axios, React Query, and Node.js. Practiced pair programming to promote collaboration and mutual learning, emphasizing a mobile-first development approach.",
-        "i2": "🔧 Project Management: Project management following agile methodologies and SCRUM. Task management through GitHub, with daily meetings to ensure project progress and alignment with objectives.",
-        "i3": "🎨 UI Design: Translating designs from Figma into responsive interfaces using React, Next.js, Ant Design and Tailwind CSS, focusing on mobile-first design principles. Emphasizing user experience to prioritize usability and accessibility across all devices.",
-        "i4": "✨ Code Excellence: Utilizing clean, efficient and sustainable code standards. Collaborating with frontend developers through code reviews to share knowledge and ensure code quality, with special attention to performance optimization on mobile devices.",
-        "i5": "🌐 Deployment and Infrastructure: Maintaining CI/CD pipelines using GitHub Actions for secure and scalable solutions. Integrating OAuth for user authentication and authorization, ensuring data security and user privacy on mobile platforms."
+        "i1": "Mentorship: guided junior developers in Next.js, TypeScript, React Query, and Node.js, emphasizing mobile-first and pair programming.",
+        "i2": "Project Management: applied agile methodologies (Scrum) and used GitHub for task tracking and team alignment.",
+        "i3": "UI/Frontend: built responsive interfaces from Figma designs using React, Next.js, Ant Design, and Tailwind CSS.",
+        "i4": "DevOps: maintained CI/CD pipelines (GitHub Actions) and implemented OAuth integration for secure authentication."
       }
     }
   },

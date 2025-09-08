@@ -96,7 +96,7 @@ export default function ProjectCard({
                 </span>
               </a>
 
-              {project.url && (
+              {project.url && project.url != "" && (
                 <a
                   href={project.url}
                   target="_blank"
