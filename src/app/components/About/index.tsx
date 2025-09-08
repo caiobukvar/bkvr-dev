@@ -24,6 +24,7 @@ export default function About() {
         <div className="flex flex-col gap-4 border-l-2 border-lime-600 pl-6 text-sm text-slate-800 md:text-base dark:text-slate-400">
           <p>{t("about-p1")}</p>
           <p>{t("about-p2")}</p>
+          <p>{t("about-p3")}</p>
         </div>
       </div>
     </div>
