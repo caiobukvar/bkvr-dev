@@ -21,6 +21,24 @@
   },
   {
     "id": 2,
+    "name": "BestMeals API",
+    "description": "BestMealsAPI is an API designed to allow users to rate dishes, generating a ranking of the best options in the city. To validate the idea, an MVP was created that enables registering meals, assigning ratings, and viewing the top-rated dishes.",
+    "url": "",
+    "githubURL": "https://github.com/caiobukvar/BestMealsAPI",
+    "thumbnail": "/images/projects/thumb-bestmeals.png",
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Spring Web",
+      "PostgreSQL",
+      "Eureka",
+      "API Gateway"
+    ],
+    "status": "Complete"
+  },
+  {
+    "id": 3,
     "name": "ATT Notes",
     "description": "Audio-to-text notes is note creation tool that automatically transcripts audio into text and saves data to localstorage only.",
     "url": "https://nlw-expert14-react.vercel.app/",
@@ -40,7 +58,7 @@
     "status": "Complete"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "BR Advocacia",
     "description": "Layout created to simulate a lawyer's website.",
     "url": "https://br-adv.vercel.app/",
@@ -59,7 +77,7 @@
     "status": "Complete"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Wookie Pizza",
     "description": "The project is a pizzeria menu, made for order customization, also counting with 'pizza of the day' promotion and a points system. It was made in a 4 day period limit to test what I could accomplish in said time.",
     "url": "https://wookie-pizza.vercel.app/",
