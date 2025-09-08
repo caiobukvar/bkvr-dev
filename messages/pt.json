@@ -31,23 +31,25 @@
     "november": "Nov.",
     "job3": {
       "list": {
-        "i1": "Desenvolvimento de features e manutenção dos módulos existentes em uma plataforma de gestão de qualidade.",
-        "i2": "Aplicação de conhecimentos gerais e aprendizagem sobre o suporte e desenvolvimento da plataforma, dos módulos e os processos de qualidade."
+        "i1": "Atuação em Suporte e Desenvolvimento: iniciei no suporte ao sistema para entender melhor os fluxos internos, módulos e processos de qualidade, evoluindo para o desenvolvimento de funcionalidades em microsserviços Java.",
+        "i2": "Manutenção e Implementação de Funcionalidades: realizei tasks minor em ambiente real, como correções, ajustes de traduções, inclusão e edição de funcionalidades em serviços existentes, sempre com o apoio de um desenvolvedor da equipe.",
+        "i3": "Trabalho com Arquitetura de Microsserviços: o sistema era construído com diversos microsserviços integrados, utilizando Java 8, Spring Boot, JPA, Eureka e API Gateway, com deploy em JBoss e persistência em SQL Server e Oracle."
       }
     },
     "job2": {
       "list": {
-        "i1": "Contribuiu como desenvolvedor frontend na equipe encarregada do desenvolvimento de uma plataforma de ensino de idiomas, assumindo a responsabilidade pela implementação de novas features, criação de layouts a partir de designs no Figma e manutenção contínua da plataforma. ",
-        "i2": "As features desenvolvidas abrangiam o gerenciamento de documentos, professores, alunos, horários, bem como a criação de pop-ups, modais, banners e outras soluções para promoções de marketing.",
-        "i3": "Colaboração em equipe com mais dois desenvolvedores, que eram responsáveis pelo backend e suporte ao frontend.",
-        "i4": "Participação ativa em metodologias ágeis (Scrum), incluindo planejamento de sprints, revisões de código e programação em pares.",
-        "i5": "Desenvolvimento de habilidades sólidas em HTML, CSS, JavaScript e frameworks modernos, visando a eficácia e a evolução da plataforma."
+        "i1": "Desenvolvimento e Manutenção de Funcionalidades: implementei novas features e realizei a manutenção contínua da plataforma, incluindo gerenciamento de documentos, professores, alunos e horários, além da criação de componentes de interface como pop-ups, modais, banners e ferramentas para promoções de marketing.",
+        "i2": "Implementação de Layouts: converti designs criados no Figma em layouts responsivos, garantindo consistência visual e boa usabilidade.",
+        "i3": "Colaboração em Equipe: trabalhei em conjunto com outros dois desenvolvedores (backend e suporte ao frontend), participando ativamente de cerimônias ágeis (Scrum), planejamento de sprints, revisões de código e sessões de programação em pares.",
+        "i4": "Habilidades Técnicas: desenvolvi expertise em HTML, CSS, JavaScript e frameworks modernos de frontend, contribuindo para a evolução da plataforma e melhoria da experiência do usuário."
       }
     },
     "job1": {
       "list": {
-        "i1": "Desenvolvimento e integração de layouts a partir de designs no figma para uma plataforma para aulas de idiomas.",
-        "i2": "A rotina consistia em dailies e weeklies para alinhamento de tarefas, pair programming e code review, orientado por um desenvolvedor sênior. Todo mês realizávamos reuniões 1-on-1 para discussão sobre aprendizados e dicas para melhoria de softskill."
+        "i1": "Experiência Prática em Projeto Real: participei de uma residência de desenvolvimento na Cubos Academy, atuando como desenvolvedor frontend no projeto Unmaze, uma plataforma de ensino de idiomas.",
+        "i2": "Criação de Funcionalidades e Interfaces: implementei novas features e desenvolvi interfaces responsivas a partir de protótipos no Figma, reforçando boas práticas de usabilidade e design.",
+        "i3": "Trabalho Colaborativo em Equipe: atuei junto a colegas de frontend e backend, aplicando metodologias ágeis (Scrum) em tarefas de manutenção, revisão de código e entregas contínuas.",
+        "i4": "Base para Atuação Posterior: o trabalho realizado nesse projeto serviu como base e foi continuado profissionalmente, dando origem à experiência de desenvolvimento descrita no trabalho seguinte."
       }
     }
   },
@@ -58,11 +60,10 @@
     "march": "Mar.",
     "job1": {
       "list": {
-        "i1": "👨‍💻 Mentoria: Orientação a desenvolvedores juniores, ensinando habilidades de programação essenciais como Next.js, Typescript, Axios, React Query e Node.js. Praticou programação em duplas para promover colaboração e aprendizado mútuo, enfatizando uma abordagem de desenvolvimento focada em dispositivos móveis.",
-        "i2": "🔧 Gestão de Projetos: Gerenciamento de projeto seguindo metodologias ágeis e SCRUM. Gerenciamento de tarefas através do GitHub, com reuniões diárias para garantir o progresso do projeto e alinhamento com os objetivos.",
-        "i3": "🎨 Design de UI: Tradução de designs do Figma em interfaces responsivas usando React, Next.js, Ant Design e Tailwind CSS, com foco nos princípios de design mobile-first. Ênfase na experiência do usuário para priorizar usabilidade e acessibilidade em todos os dispositivos.",
-        "i4": "✨ Excelência de Código: Utilização de padrões de código limpo, eficiente e sustentável. Colaboração com desenvolvedores frontend através de revisões de código para compartilhar conhecimento e garantir qualidade de código, com atenção especial para otimização de desempenho em dispositivos móveis.",
-        "i5": "🌐 Implantação e Infraestrutura: Manutenção de pipelines de CI/CD usando GitHub Actions para soluções seguras e escaláveis. Integração OAuth para autenticação e autorização de usuários, garantindo segurança de dados e privacidade do usuário em plataformas móveis."
+        "i1": "Mentoria: orientação a desenvolvedores juniores em Next.js, TypeScript, React Query e Node.js, com foco em mobile-first e pair programming.",
+        "i2": "Gestão de Projetos: aplicação de metodologias ágeis (Scrum) e uso do GitHub para organização de tarefas e alinhamento de equipe.",
+        "i3": "UI/Frontend: implementação de interfaces responsivas a partir de Figma, usando React, Next.js, Ant Design e Tailwind CSS.",
+        "i4": "DevOps: manutenção de pipelines CI/CD (GitHub Actions) e integração OAuth para autenticação segura."
       }
     }
   },

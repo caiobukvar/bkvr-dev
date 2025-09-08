@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 /* eslint-disable react/no-unescaped-entities */
 export default function Experience() {
   const t = useTranslations("Experience");
-  const job3ListKeys = ["i1", "i2"] as const;
-  const job2ListKeys = ["i1", "i2", "i3", "i4", "i5"] as const;
-  const job1ListKeys = ["i1", "i2"] as const;
+  const job3ListKeys = ["i1", "i2", "i3"] as const;
+  const job2ListKeys = ["i1", "i2", "i3", "i4"] as const;
+  const job1ListKeys = ["i1", "i2", "i3", "i4"] as const;
   const job1Tags = [
     "React",
     "ChakraUI",
@@ -31,7 +31,10 @@ export default function Experience() {
   const job3Tags = [
     "Java 8",
     "Maven",
-    "Spring Tools",
+    "Spring Boot",
+    "JPA",
+    "Eureka",
+    "API Gateway",
     "JBoss",
     "SQLserver",
     "Oracle",
