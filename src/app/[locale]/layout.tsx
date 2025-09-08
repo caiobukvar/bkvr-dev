@@ -6,10 +6,10 @@ import { Toaster } from "sonner";
 import "../../styles/globals.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { useTranslations } from "next-intl";
 import ThemeSelector from "../components/ThemeSelector";
 import IntlBar from "../components/IntlBar";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bkvr.dev.br"),
@@ -28,36 +28,38 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const t = useTranslations("Navbar");
+  const { locale } = await params;
+
+  // Load translations from Next Intl (locale is automatically detected)
+  const t = await getTranslations("Navbar");
 
   const navbarTranslations = {
-    about: `${t("about")}`,
-    experience: `${t("experience")}`,
-    projects: `${t("projects")}`,
-    contact: `${t("contact")}`,
+    about: t("about"),
+    experience: t("experience"),
+    projects: t("projects"),
+    contact: t("contact"),
   };
 
   return (
     <html lang={locale}>
-      <Toaster
-        richColors
-        toastOptions={{
-          style: {
-            background: "rgb(51 65 85)",
-          },
-        }}
-      />
-
       <body
         className={`min-h-screen bg-slate-200 text-slate-400 dark:bg-slate-900 ${unbounded.className}`}
       >
+        <Toaster
+          richColors
+          toastOptions={{
+            style: {
+              background: "rgb(51 65 85)",
+            },
+          }}
+        />
         <Navbar navbarTranslations={navbarTranslations} />
         {children}
 
