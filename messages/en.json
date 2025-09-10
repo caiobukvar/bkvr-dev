@@ -9,16 +9,18 @@
     "title-1": "Meet ",
     "title-2": ", software developer.",
     "about-me": "About me",
-    "about-p1": "Hi, I'm Caio! I'm a developer and I've been on this journey since 2021. What motivates me the most is solving problems and seeing things work - from the interface users see to the behind-the-scenes that make everything happen.",
-    "about-p2": "I enjoy working on both front-end and back-end because each side has its unique challenges, and this complete view helps me create more consistent solutions. I've always been curious, so I'm constantly learning new things and improving what I already know.",
-    "about-p3": "Currently, I'm looking for an opportunity as an intern or junior developer where I can truly contribute to the team and continue evolving. I believe the best way to grow is by getting hands-on experience with real projects."
+    "about-p1": "Hi, I'm Caio! Developer since 2021, always seeking to improve my work and have fun learning new things - especially with the bugs that give me that little headache (and a touch of adrenaline).",
+    "about-p2": "I enjoy working on both front-end and back-end. Each side has its challenges, and this complete view helps me be more consistent. I love seeing a project come to life and actually work, from the interface to the behind-the-scenes.",
+    "about-p3": "I've always been curious, so I'm always learning something new - whether it's a different technology or a better way to solve an old problem.",
+    "about-p4": "I'm currently looking for an opportunity as an intern or junior developer where I can contribute to the team and keep evolving. I believe the best way to grow is by getting hands-on with real projects.",
+    "hobbies-p1": "When I'm not programming, I enjoy cooking, competitive gaming, and exploring new technologies. This curiosity about technology has been with me since childhood, and I adapt well to new environments and tools."
   },
   "Achievements": {
     "title": "Achievements",
     "items": {
       "title": "Hackaton UniAnchieta 2024",
       "placement": "2nd place",
-      "description": "An MVP of a platform for integrated onboarding of new employees was created, centralizing documents, items, and policies in a single location, using an AI chat to assist employees in navigating and using the platform."
+      "description": "An MVP of a platform for integrated onboarding of new employees was created, centralizing documents, items, and policies in a single location and using an AI chat to assist employees in navigating and using the platform."
     }
   },
   "Experience": {

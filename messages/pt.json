@@ -8,16 +8,18 @@
     "title-1": "Conheça ",
     "title-2": ", desenvolvedor de software.",
     "about-me": "Sobre mim",
-    "about-p1": "Oi, eu sou o Caio! Sou desenvolvedor e estou nessa jornada desde 2021. O que mais me motiva é resolver problemas e ver as coisas funcionando - desde a interface que o usuário vê até os bastidores que fazem tudo acontecer.",
-    "about-p2": "Gosto de trabalhar tanto no front-end quanto no back-end porque cada lado tem seus desafios únicos, e essa visão completa me ajuda a criar soluções mais consistentes. Sempre fui curioso, então busco aprender coisas novas e melhorar o que já conheço.",
-    "about-p3": "No momento, estou procurando uma oportunidade como estagiário ou desenvolvedor júnior onde eu possa contribuir de verdade com a equipe e continuar evoluindo. Acredito que a melhor forma de crescer é colocando a mão na massa em projetos reais."
+    "about-p1": "Oi, eu sou o Caio! Desenvolvedor desde 2021, sempre buscando aperfeiçoar meu trabalho e me divertir aprendendo coisas novas - principalmente com os bugs que dão aquela dorzinha de cabeça (e um quê de adrenalina).",
+    "about-p2": "Gosto de trabalhar tanto no front-end quanto no back-end. Cada lado tem seus desafios, e essa visão completa me ajuda a ser mais consistente. Me encanta ver um projeto sair do papel e realmente funcionar, desde a interface até os bastidores.",
+    "about-p3": "Sempre fui curioso, então estou sempre aprendendo algo novo - seja uma tecnologia diferente ou uma forma melhor de resolver um problema antigo.",
+    "about-p4": "No momento busco uma oportunidade como estagiário ou desenvolvedor júnior onde eu possa contribuir com a equipe e continuar evoluindo. Acredito que a melhor forma de crescer é colocando a mão na massa em projetos reais.",
+    "hobbies-p1": "Quando não estou programando, gosto de cozinhar, jogar competitivamente e explorar novas tecnologias. Essa curiosidade por tecnologia vem desde criança, e me adapto bem a novos ambientes e ferramentas."
   },
   "Achievements": {
     "title": "Conquistas",
     "items": {
       "title": "Hackaton UniAnchieta 2024",
       "placement": "2º Lugar",
-      "description": "Criado um MVP de uma plataforma para onboarding integrado de novos colaboradores, centralizando documentos, itens e políticas em um só local, utilizando um chat AI para auxiliar o colaborador no  uso da plataforma."
+      "description": "Foi criado um MVP de uma plataforma para integração de novos funcionários, centralizando documentos, itens e políticas em um único local e utilizando um chat com IA para auxiliar os funcionários na navegação e uso da plataforma."
     }
   },
   "Experience": {
