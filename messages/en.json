@@ -9,11 +9,11 @@
     "title-1": "Meet ",
     "title-2": ", software developer.",
     "about-me": "About me",
-    "about-p1": "Hi, I'm Caio! Developer since 2021, always seeking to improve my work and have fun learning new things - especially with the bugs that give me that little headache (and a touch of adrenaline).",
-    "about-p2": "I enjoy working on both front-end and back-end. Each side has its challenges, and this complete view helps me be more consistent. I love seeing a project come to life and actually work, from the interface to the behind-the-scenes.",
-    "about-p3": "I've always been curious, so I'm always learning something new - whether it's a different technology or a better way to solve an old problem.",
-    "about-p4": "I'm currently looking for an opportunity as an intern or junior developer where I can contribute to the team and keep evolving. I believe the best way to grow is by getting hands-on with real projects.",
-    "hobbies-p1": "When I'm not programming, I enjoy cooking, competitive gaming, and exploring new technologies. This curiosity about technology has been with me since childhood, and I adapt well to new environments and tools."
+    "about-p1": "Hi, I'm Caio! Developer since 2021, transitioning to the cloud world with a focus on AWS. I've always loved learning new things, and now that curiosity has led me to cloud computing.",
+    "about-p2": "I have experience in both front-end and back-end, but what excites me most today is discovering how everything fits together between AWS solutions and the code I develop. Working with microservices and APIs gave me a solid foundation to understand how these pieces connect.",
+    "about-p3": "I'm studying for the AWS Cloud Practitioner certification and practicing on the Free Tier. It's incredible to see how concepts I already know (Docker, APIs, databases) take on a new dimension in the cloud. Every day I discover something new about EC2, S3, Lambda...",
+    "about-p4": "Currently seeking an opportunity as Cloud Support, Junior Cloud Engineer or AWS Associate - roles where I can start my cloud journey and apply my technical foundation in a new and challenging context. I believe the best way to grow is by getting hands-on with real projects.",
+    "hobbies-p1": "When I'm not coding or studying, I enjoy cooking, competitive gaming, and exploring new technologies. This curiosity about technology has been with me since childhood, and I adapt well to new environments - a skill that has been super useful in this transition to cloud!"
   },
   "Achievements": {
     "title": "Achievements",
